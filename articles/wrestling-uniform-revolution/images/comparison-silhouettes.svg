@@ -1,0 +1,171 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap');
+      text { font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif; }
+    </style>
+  </defs>
+
+  <rect width="800" height="500" fill="#14141f"/>
+
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" fill="#d4a574" font-size="18" font-weight="600" letter-spacing="2">СРАВНЕНИЕ СИЛУЭТОВ</text>
+  <line x1="250" y1="50" x2="550" y2="50" stroke="#d4a574" stroke-width="0.5" opacity="0.5"/>
+
+  <!-- === LEFT: Current Singlet === -->
+  <g transform="translate(130, 70)">
+    <!-- Body silhouette - plain singlet -->
+    <g fill="#3a3a4a" stroke="none">
+      <!-- Head -->
+      <ellipse cx="0" cy="20" rx="18" ry="22"/>
+      <!-- Neck -->
+      <rect x="-8" y="40" width="16" height="15" rx="3"/>
+      <!-- Torso - thin straps singlet -->
+      <path d="M-35,55 L-30,55 L-25,55 L-20,52 L-8,52 L-5,55 L5,55 L8,52 L20,52 L25,55 L30,55 L35,55 L40,80 L42,120 L40,155 L35,160 L20,162 L10,165 L10,175 L-10,175 L-10,165 L-20,162 L-35,160 L-40,155 L-42,120 L-40,80 Z"/>
+      <!-- Thin straps -->
+      <path d="M-8,52 L-10,40 L-5,38 L-3,52 Z" fill="#3a3a4a"/>
+      <path d="M8,52 L10,40 L5,38 L3,52 Z" fill="#3a3a4a"/>
+      <!-- Left arm -->
+      <path d="M-35,55 L-55,65 L-70,95 L-75,130 L-68,132 L-58,100 L-45,72 L-40,62 Z" fill="#2a2a38"/>
+      <!-- Right arm -->
+      <path d="M35,55 L55,65 L70,95 L75,130 L68,132 L58,100 L45,72 L40,62 Z" fill="#2a2a38"/>
+      <!-- Left leg (exposed - singlet ends high) -->
+      <path d="M-10,175 L-15,220 L-20,270 L-22,320 L-25,360 L-15,362 L-10,320 L-5,270 L-2,220 L0,175 Z" fill="#2a2a38"/>
+      <!-- Right leg -->
+      <path d="M10,175 L15,220 L20,270 L22,320 L25,360 L15,362 L10,320 L5,270 L2,220 L0,175 Z" fill="#2a2a38"/>
+    </g>
+    <!-- Singlet outline - very plain -->
+    <path d="M-8,52 L-10,40 L-5,38 L-3,52 L3,52 L5,38 L10,40 L8,52 L20,52 L35,55 L40,80 L42,120 L40,155 L35,160 L20,162 L10,165 L10,175 L-10,175 L-10,165 L-20,162 L-35,160 L-40,155 L-42,120 L-40,80 L-35,55 L-20,52 Z" fill="none" stroke="#4a4a5a" stroke-width="1"/>
+
+    <!-- Label -->
+    <text x="0" y="400" text-anchor="middle" fill="#6b6b7b" font-size="14" font-weight="600">Текущая форма</text>
+    <text x="0" y="420" text-anchor="middle" fill="#6b6b7b" font-size="11" opacity="0.7">Классическое трико</text>
+  </g>
+
+  <!-- === CENTER: Boxer === -->
+  <g transform="translate(400, 70)">
+    <!-- Body silhouette - boxing -->
+    <g fill="#4a4a5e" stroke="none">
+      <!-- Head -->
+      <ellipse cx="0" cy="20" rx="18" ry="22"/>
+      <!-- Neck -->
+      <rect x="-9" y="40" width="18" height="15" rx="3"/>
+      <!-- Torso - bare, muscular -->
+      <path d="M-38,55 L-42,80 L-44,110 L-42,140 L-38,155 L-20,160 L0,162 L20,160 L38,155 L42,140 L44,110 L42,80 L38,55 Z" fill="#3d3d50"/>
+      <!-- Shoulders wider for power look -->
+      <path d="M-38,55 L-48,58 L-50,62 L-45,65 L-38,60 Z" fill="#3d3d50"/>
+      <path d="M38,55 L48,58 L50,62 L45,65 L38,60 Z" fill="#3d3d50"/>
+      <!-- Left arm with glove -->
+      <path d="M-38,55 L-58,65 L-72,95 L-76,125 L-74,135 L-65,100 L-50,72 L-42,62 Z" fill="#3d3d50"/>
+      <!-- Left boxing glove -->
+      <ellipse cx="-76" cy="132" rx="12" ry="14" fill="#d4a574"/>
+      <ellipse cx="-76" cy="132" rx="10" ry="12" fill="#c49564" stroke="#d4a574" stroke-width="1"/>
+      <!-- Right arm with glove -->
+      <path d="M38,55 L58,65 L72,95 L76,125 L74,135 L65,100 L50,72 L42,62 Z" fill="#3d3d50"/>
+      <!-- Right boxing glove -->
+      <ellipse cx="76" cy="132" rx="12" ry="14" fill="#d4a574"/>
+      <ellipse cx="76" cy="132" rx="10" ry="12" fill="#c49564" stroke="#d4a574" stroke-width="1"/>
+      <!-- Boxing shorts - wide, to knee -->
+      <path d="M-38,155 L-42,180 L-40,220 L-38,260 L-30,262 L-25,230 L-15,200 L0,195 L15,200 L25,230 L30,262 L38,260 L40,220 L42,180 L38,155 Z" fill="#4a4a5e"/>
+      <!-- Wide belt on shorts -->
+      <rect x="-38" y="155" width="76" height="14" rx="2" fill="#d4a574" opacity="0.8"/>
+      <!-- Left leg below shorts -->
+      <path d="M-30,262 L-28,300 L-30,340 L-32,360 L-22,362 L-20,340 L-20,300 L-25,262 Z" fill="#3d3d50"/>
+      <!-- Right leg below shorts -->
+      <path d="M30,262 L28,300 L30,340 L32,360 L22,362 L20,340 L20,300 L25,262 Z" fill="#3d3d50"/>
+    </g>
+    <!-- Boxing boots hint -->
+    <rect x="-34" y="355" width="16" height="12" rx="2" fill="#4a4a5e" stroke="#5a5a6e" stroke-width="0.5"/>
+    <rect x="18" y="355" width="16" height="12" rx="2" fill="#4a4a5e" stroke="#5a5a6e" stroke-width="0.5"/>
+
+    <!-- Shorts design lines -->
+    <line x1="-20" y1="170" x2="-25" y2="260" stroke="#d4a574" stroke-width="1" opacity="0.4"/>
+    <line x1="20" y1="170" x2="25" y2="260" stroke="#d4a574" stroke-width="1" opacity="0.4"/>
+
+    <!-- Label -->
+    <text x="0" y="400" text-anchor="middle" fill="#d4a574" font-size="14" font-weight="600">Боксёр</text>
+    <text x="0" y="420" text-anchor="middle" fill="#6b6b7b" font-size="11" opacity="0.7">Шорты + перчатки</text>
+  </g>
+
+  <!-- === RIGHT: Gladiator Concept === -->
+  <g transform="translate(670, 70)">
+    <!-- Body silhouette - Gladiator concept -->
+    <g fill="#1a1a28" stroke="none">
+      <!-- Head -->
+      <ellipse cx="0" cy="20" rx="18" ry="22" fill="#3d3d50"/>
+      <!-- Neck -->
+      <rect x="-9" y="40" width="18" height="12" rx="3" fill="#3d3d50"/>
+
+      <!-- Wide shoulder straps (15cm) - armor-like -->
+      <path d="M-42,52 L-50,56 L-52,65 L-48,68 L-38,62 L-30,58 Z" fill="#1a1a28" stroke="#d4a574" stroke-width="1"/>
+      <path d="M42,52 L50,56 L52,65 L48,68 L38,62 L30,58 Z" fill="#1a1a28" stroke="#d4a574" stroke-width="1"/>
+
+      <!-- Main torso with armor panels -->
+      <path d="M-38,58 L-42,80 L-44,110 L-42,145 L-38,155 L-30,158 L-15,165 L-15,230 L-8,232 L0,230 L8,232 L15,230 L15,165 L30,158 L38,155 L42,145 L44,110 L42,80 L38,58 L30,55 L20,52 L-20,52 L-30,55 Z" fill="#1a1a28" stroke="#d4a574" stroke-width="0.8"/>
+
+      <!-- Chest armor segments (6 horizontal) -->
+      <line x1="-25" y1="68" x2="25" y2="68" stroke="#d4a574" stroke-width="0.8" opacity="0.7"/>
+      <line x1="-28" y1="80" x2="28" y2="80" stroke="#d4a574" stroke-width="0.8" opacity="0.7"/>
+      <line x1="-30" y1="92" x2="30" y2="92" stroke="#d4a574" stroke-width="0.8" opacity="0.7"/>
+      <line x1="-30" y1="104" x2="30" y2="104" stroke="#d4a574" stroke-width="0.8" opacity="0.7"/>
+      <line x1="-28" y1="116" x2="28" y2="116" stroke="#d4a574" stroke-width="0.8" opacity="0.7"/>
+      <line x1="-25" y1="128" x2="25" y2="128" stroke="#d4a574" stroke-width="0.8" opacity="0.7"/>
+
+      <!-- Shield on left chest -->
+      <path d="M-18,72 L-10,70 L-10,85 L-14,90 L-18,85 Z" fill="none" stroke="#d4a574" stroke-width="1.2"/>
+      <circle cx="-14" cy="79" r="3" fill="none" stroke="#d4a574" stroke-width="0.6"/>
+
+      <!-- V-shaped waistline -->
+      <path d="M-38,145 L0,158 L38,145" fill="none" stroke="#d4a574" stroke-width="1.2"/>
+
+      <!-- Side vertical strips on shorts -->
+      <line x1="-15" y1="165" x2="-15" y2="230" stroke="#d4a574" stroke-width="1.5" opacity="0.6"/>
+      <line x1="15" y1="165" x2="15" y2="230" stroke="#d4a574" stroke-width="1.5" opacity="0.6"/>
+
+      <!-- Arms (exposed) -->
+      <path d="M-42,58 L-60,68 L-74,98 L-78,130 L-70,132 L-62,102 L-50,75 L-44,62 Z" fill="#3d3d50"/>
+      <path d="M42,58 L60,68 L74,98 L78,130 L70,132 L62,102 L50,75 L44,62 Z" fill="#3d3d50"/>
+
+      <!-- Legs below shorts -->
+      <path d="M-8,232 L-12,280 L-15,320 L-18,360 L-8,362 L-5,320 L-3,280 L0,232 Z" fill="#3d3d50"/>
+      <path d="M8,232 L12,280 L15,320 L18,360 L8,362 L5,320 L3,280 L0,232 Z" fill="#3d3d50"/>
+    </g>
+
+    <!-- Gold glow effect on the concept -->
+    <path d="M-38,58 L-42,80 L-44,110 L-42,145 L-38,155 L-30,158 L-15,165 L-15,230 L-8,232 L0,230 L8,232 L15,230 L15,165 L30,158 L38,155 L42,145 L44,110 L42,80 L38,58 L30,55 L20,52 L-20,52 L-30,55 Z" fill="none" stroke="#d4a574" stroke-width="1.5" opacity="0.3" filter="url(#glow)"/>
+
+    <!-- Label -->
+    <text x="0" y="400" text-anchor="middle" fill="#d4a574" font-size="14" font-weight="600">Концепт</text>
+    <text x="0" y="420" text-anchor="middle" fill="#6b6b7b" font-size="11" opacity="0.7">Гладиатор</text>
+  </g>
+
+  <!-- Divider lines between silhouettes -->
+  <line x1="265" y1="90" x2="265" y2="440" stroke="#6b6b7b" stroke-width="0.5" stroke-dasharray="4,6" opacity="0.3"/>
+  <line x1="535" y1="90" x2="535" y2="440" stroke="#6b6b7b" stroke-width="0.5" stroke-dasharray="4,6" opacity="0.3"/>
+
+  <!-- Arrows showing progression -->
+  <g opacity="0.4">
+    <path d="M220,250 L240,250" stroke="#6b6b7b" stroke-width="1.5" marker-end="url(#arrowGray)"/>
+    <path d="M490,250 L510,250" stroke="#d4a574" stroke-width="1.5" marker-end="url(#arrowGold)"/>
+  </g>
+
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arrowGray" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6" fill="none" stroke="#6b6b7b" stroke-width="1"/>
+    </marker>
+    <marker id="arrowGold" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6" fill="none" stroke="#d4a574" stroke-width="1"/>
+    </marker>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Bottom note -->
+  <text x="400" y="480" text-anchor="middle" fill="#6b6b7b" font-size="10" opacity="0.6" letter-spacing="1">ТА ЖЕ ФУНКЦИОНАЛЬНОСТЬ — ДРУГОЕ ВОСПРИЯТИЕ</text>
+</svg>
