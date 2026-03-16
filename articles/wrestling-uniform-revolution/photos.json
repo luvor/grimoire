@@ -1,0 +1,44 @@
+{
+  "photos": [
+    {
+      "id": "gladiator-photo",
+      "prompt": "Professional sports photography of a muscular male wrestler wearing an innovative wrestling singlet with bronze armored panels on chest and back, wide 12cm shoulder straps, segmented plate design inspired by Roman gladiator armor. The singlet extends to mid-thigh. Dark matte black base with bronze metallic panels. The athlete is photographed from behind at a three-quarter angle, face turned away, standing in a wrestling stance on a competition mat. Dramatic arena lighting from above, shallow depth of field. Editorial sports magazine quality, 85mm lens, high contrast.",
+      "aspect": "3:4",
+      "censor": {"auto_head": true},
+      "caption": "Концепт «Гладиатор» — рельефные бронзовые панели на тёмной основе создают силуэт воина, а не участника школьных соревнований.",
+      "css_class": "figure-wide"
+    },
+    {
+      "id": "strike-photo",
+      "prompt": "Professional sports photography of an athletic male wrestler wearing a futuristic minimal wrestling singlet with bright neon accent lines running diagonally from left shoulder to right hip. Dark black base with electric blue contour lines that follow muscle groups. No armor panels, sleek and aerodynamic design. The wrestler is photographed from the side profile, face in dramatic shadow, in a dynamic low wrestling stance. Dark arena background with rim lighting. Sports editorial quality, cinematic lighting, 70mm lens.",
+      "aspect": "3:4",
+      "censor": {"auto_head": true},
+      "caption": "Концепт «Страйк» — неоновые контурные линии на тёмной основе. Борец читается на любом расстоянии, как болид Формулы-1.",
+      "css_class": "figure-wide"
+    },
+    {
+      "id": "heritage-photo",
+      "prompt": "Professional sports photography of a strong male wrestler wearing a full-body wrestling uniform: fitted long-sleeve top to elbows and shorts-leggings to knees, all one piece. The uniform features intricate Persian arabesque patterns in turquoise and gold on a dark navy base, with a sun symbol (shamse) on the chest. Inspired by Iranian wrestling traditions. Wrestler photographed in profile view, face turned away, standing proudly with arms at sides. Warm golden arena lighting, competition mat visible. Editorial sports photography, 85mm portrait lens.",
+      "aspect": "3:4",
+      "censor": {"auto_head": true},
+      "caption": "Концепт «Наследие» — персидские арабески превращают форму в культурный манифест. У каждой сборной — свой уникальный визуальный код.",
+      "css_class": "figure-wide"
+    },
+    {
+      "id": "elite-photo",
+      "prompt": "Professional sports photography of a muscular male wrestler wearing a premium modern wrestling singlet. Wide 10cm shoulder straps with gradient fade into the body. Matte dark charcoal base with contrasting zones — matte finish on major muscle groups, subtle sheen between them creating a sculpted 3D effect. Large athlete surname typography on the back, country flag patch on chest. Nike/Adidas level premium sportswear design. Wrestler looking down at the mat, head bowed, face not visible, powerful stance. Studio-quality lighting with dramatic shadows. Sports advertising quality, 85mm lens.",
+      "aspect": "3:4",
+      "censor": {"auto_head": true},
+      "caption": "Концепт «Элита» — премиальный подход: зональная компрессия создаёт рельеф без единой накладной детали.",
+      "css_class": "figure-wide"
+    },
+    {
+      "id": "before-after",
+      "prompt": "Professional sports photography, split comparison image. LEFT SIDE: a wrestler wearing a plain, generic, unflattering red wrestling singlet (traditional basic design, thin straps, looks like underwear), standing flat-footed under flat fluorescent gym lighting, looking unimpressive. RIGHT SIDE: the same body type wrestler wearing a modern redesigned wrestling singlet with wide shoulder straps, dark base with bold graphic elements, armored look, standing in a powerful stance under dramatic arena spotlights, looking like a warrior. Both figures photographed from behind, faces not visible. Clear visual contrast between old boring design and new powerful design. Editorial comparison photography.",
+      "aspect": "16:9",
+      "censor": {"auto_head": true},
+      "caption": "Слева — стандартное трико, превращающее атлета в школьника. Справа — концепт, достойный чемпиона мира.",
+      "css_class": "figure-full"
+    }
+  ]
+}

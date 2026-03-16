@@ -28,6 +28,10 @@ Grimoire (グリモワール) — статический сайт-платфор
 │       ├── research.md           # Результаты исследования
 │       ├── concept.md            # Концепт (если применимо)
 │       └── images/               # Изображения статьи
+├── scripts/
+│   ├── generate-image.py         # Генерация изображения через Gemini API
+│   ├── censor-faces.py           # Цензурирование лиц чёрным прямоугольником
+│   └── generate-article-photos.py # Батч-генерация фото из photos.json
 ├── templates/
 │   └── article.html              # Шаблон для новых статей
 └── CLAUDE.md                     # Эти инструкции
@@ -254,6 +258,76 @@ GitHub Pages автоматически обновится.
 3. **Два режима** — тёмная и светлая тема
 4. **Мобильный** — адаптивная вёрстка
 5. **Без фреймворков** — чистый HTML/CSS/JS для GitHub Pages
+
+## AI-сгенерированные фотографии
+
+Для статей, которым нужны фотореалистичные визуализации, используй скрипты в `scripts/`.
+
+### Настройка API-ключа
+
+1. Получи бесплатный ключ: https://aistudio.google.com/apikey (без карты)
+2. Создай `.env` в корне проекта: `GEMINI_API_KEY=твой_ключ`
+3. `.env` уже в `.gitignore` — ключ не попадёт в репо
+
+### Генерация одного изображения
+
+```bash
+python3 scripts/generate-image.py \
+  --prompt "Professional sports photo of..." \
+  --output articles/{slug}/images/photo.webp \
+  --aspect 3:4
+```
+
+### Цензурирование лиц
+
+Лица на AI-фото должны быть скрыты чёрным прямоугольником (old-school redacted стиль):
+
+```bash
+# Автоматическая эвристика (стоящая фигура во весь рост)
+python3 scripts/censor-faces.py input.webp output.webp --auto-head
+
+# Ручное указание региона (x,y,w,h в процентах)
+python3 scripts/censor-faces.py input.webp output.webp --region 30,2,35,16
+```
+
+### Батч-генерация из манифеста
+
+1. Создай `articles/{slug}/photos.json`:
+```json
+{
+  "photos": [
+    {
+      "id": "photo-name",
+      "prompt": "Detailed prompt for the image...",
+      "aspect": "3:4",
+      "censor": {"auto_head": true},
+      "caption": "Подпись под фото в статье",
+      "css_class": "figure-wide"
+    }
+  ]
+}
+```
+
+2. Запусти генерацию:
+```bash
+python3 scripts/generate-article-photos.py articles/{slug}/photos.json
+```
+
+3. Скрипт выведет HTML-сниппеты для вставки в статью.
+
+### Требования к промптам
+
+- **Скрытие лица через промпт** — основной способ: "photographed from behind", "face turned away", "dramatic shadow on face", "head bowed down"
+- **auto-head** — страховка поверх: чёрный прямоугольник в зоне головы
+- **Формат:** WebP, quality 80, max 1200px по широкой стороне
+- **Размер:** ~100–200 КБ на фото
+- **Модель:** `gemini-2.5-flash-image` (бесплатно, 500 img/день)
+
+### Зависимости
+
+- Python 3 (стандартная библиотека: `urllib`, `json`, `base64`)
+- ImageMagick 7+ (`magick` в PATH)
+- Интернет-соединение для API-вызовов
 
 ## Рекомендации по качеству
 
