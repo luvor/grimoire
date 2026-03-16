@@ -1,52 +1,178 @@
 {
   "photos": [
     {
-      "id": "predator-photo",
-      "prompt": "Professional sports photography of a muscular male wrestler standing in an aggressive wrestling stance on a competition mat. He wears an innovative full-body wrestling singlet covered in biomimetic predator-skin textures: shark denticle texture on the shoulders, snake scale pattern across the torso, crocodile hide texture on the thighs. A raised ridge runs along the spine made of molded foam. The entire suit is anthracite black with subtle matte iridescent shifts. The wrestler faces the camera at a three-quarter angle, intense expression, dramatic arena overhead spotlights casting hard shadows. Editorial sports magazine quality, 85mm lens, high contrast, dark moody atmosphere.",
+      "id": "monolith-hero",
+      "prompt": "Professional sports photography of a muscular male wrestler, 75kg, standing in a powerful wrestling stance facing camera. He wears a revolutionary one-piece wrestling unitard from collarbones to mid-thigh in deep anthracite charcoal gray. The entire surface is one uniform micro-texture resembling polished basalt — barely visible fine grain, no zones, no color blocking, no stripes. Wide 15cm shoulder straps form a Y-silhouette on the back. All construction seams are recessed channels flush with the surface, not raised. The groin area is completely smooth and flat — double-layer panel with no visible color change or texture transition. The garment reads as one continuous monolithic dark mass carved from stone. Dramatic overhead arena lighting, dark background. Face visible, intense expression. 85mm lens, high contrast.",
       "aspect": "3:4",
-      "caption": "Концепт «Хищник» — биомиметические текстуры хищников на поверхности формы. Борец — не человек в трико, а существо.",
+      "caption": "Монолит — единая непрерывная тёмная масса. Ни полос, ни зон, ни декора. Только форма и объём.",
       "css_class": "figure-wide"
     },
     {
-      "id": "tactician-photo",
-      "prompt": "Professional sports photography of a powerful male wrestler standing at attention on a wrestling mat, wearing a tactical military-inspired wrestling singlet. The suit has visual zones resembling ballistic armor plates on chest and back, flat decorative webbing strips across the torso mimicking a tactical vest, a large bold ID number '07' printed on the back in military stencil font. Color palette: olive drab, tan, and graphite in geometric blocks. The wrestler faces the camera frontally, arms at sides, chin slightly raised, commanding presence. Dramatic side lighting, dark arena background. Editorial sports photography, 85mm lens, cinematic color grading.",
+      "id": "monolith-heavy",
+      "prompt": "Professional sports photography, side profile view of a heavyweight male wrestler, 105kg, massive build, arms crossed on chest, chin raised. He wears a deep anthracite charcoal one-piece unitard from collarbones to mid-thigh. Single uniform basalt micro-texture across entire garment — no zoning, no color transitions. Wide 15cm shoulder straps creating dramatic Y-shape visible from side. Recessed channel seams visible as thin lines. The unitard compresses the waist while maintaining volume at shoulders and thighs, making him look 10kg heavier. Groin area is smooth flat panel, no anatomical contour. Dark background, hard directional lighting from above. Face turned away showing only jawline. 85mm lens.",
       "aspect": "3:4",
-      "caption": "Концепт «Тактик» — военная эстетика превращает борца в оперативника. ID-номер вместо фамилии, бронепластины вместо полосок.",
+      "caption": "Монолит на тяжеловесе: компрессия талии при сохранении объёма плеч и бёдер. Визуально +10 кг.",
       "css_class": "figure-wide"
     },
     {
-      "id": "phantom-photo",
-      "prompt": "Professional sports photography of an athletic male wrestler standing in a wrestling ready position on a dark mat. He wears a completely black wrestling singlet with alternating matte and ultra-matte black zones. The shoulders, forearms, and quadriceps have subtle graphite metallic accents that catch the light, while the waist and neck zones absorb all light, making the silhouette appear to fragment and dissolve into shadow. Thin retroreflective threads trace muscle contour lines that flash under the arena lights. The wrestler faces the camera at three-quarter angle, mysterious presence, the body seems to break apart into floating fragments. Dramatic spotlight from above, very dark background, high contrast. Editorial sports photography, 85mm lens.",
+      "id": "monolith-action",
+      "prompt": "Professional sports photography of two wrestlers mid-throw on a competition mat. The attacker in deep anthracite unitard executes a hip throw, lifting his opponent. The anthracite unitard extends from collarbones to mid-thigh, single basalt micro-texture, no decoration, monolithic dark surface. Wide shoulder straps maintain Y-silhouette even in motion. The opponent wears a standard plain blue singlet for contrast — the difference in silhouette is stark. Groin panel stays smooth during extreme leg spread. Arena overhead lighting, frozen action. Both faces visible but in motion blur. Low angle shot, 35mm wide.",
       "aspect": "3:4",
-      "caption": "Концепт «Фантом» — чередование матового и ультра-матового чёрного разбивает силуэт. Борец — тень, которую невозможно считать.",
+      "caption": "В действии: разница между Монолитом и стандартным трико видна мгновенно. Другой силуэт, другой уровень.",
       "css_class": "figure-wide"
     },
     {
-      "id": "nexus-photo",
-      "prompt": "Professional sports photography of a muscular male wrestler wearing a full-coverage futuristic cyberpunk wrestling bodysuit from high standing collar to ankles. The suit is matte graphite with glowing electric blue geometric circuit board patterns and a neural network design covering the entire body. Reflective nodes glow at joint points: shoulders, elbows, knees. Thermochromic zones on the chest show a blue-to-red color transition. Interface strips on the forearms resemble digital displays. The wrestler stands in a powerful stance facing the camera, lit by cool blue and warm red rim lights. Dark arena background with subtle neon glow. Evangelion plug suit aesthetic, cyberpunk, sci-fi. Editorial sports photography, 85mm lens, cinematic lighting.",
+      "id": "monolith-ghost",
+      "prompt": "Product photography of a wrestling unitard on invisible ghost mannequin against dark background. Deep anthracite charcoal, collarbones to mid-thigh. Single uniform basalt micro-texture across entire surface — no zones, no stripes. Wide 15cm shoulder straps forming Y-shape on back. Recessed channel seams as thin indentations. Groin panel visibly double-layered but same color and texture. Interior partially visible at neckline showing built-in compression brief. The garment appears carved from one block of dark stone. Soft studio lighting revealing subtle texture. High resolution product shot.",
       "aspect": "3:4",
-      "caption": "Концепт «Нексус» — пилот Евангелиона на борцовском ковре. Термохромные зоны меняют цвет от нагрева тела во время схватки.",
+      "caption": "Ghost mannequin: вблизи видна микротекстура шлифованного базальта и утопленные каналы швов.",
       "css_class": "figure-wide"
     },
     {
-      "id": "berserker-photo",
-      "prompt": "Professional sports photography of an intense male wrestler in an aggressive stance on a wrestling mat. He wears a deliberately asymmetric wrestling singlet: one shoulder has a high wide strap covering the deltoid, the other shoulder is completely bare. Jagged diagonal torn strips across the torso create a ripped armor effect. Bold red and black contrast coloring. Aggressive angular typography with number and country code printed at sharp angles. One arm has a compression sleeve to the elbow, the other arm is bare. The wrestler snarls at the camera, fists clenched, raw aggression. Dramatic red-tinted rim lighting from one side, cool blue from the other. Dark arena. Editorial sports photography, 85mm lens, high energy.",
+      "id": "berserker-hero",
+      "prompt": "Professional sports photography of an intense male wrestler, 75kg, in aggressive stance facing camera. He wears a revolutionary ASYMMETRIC wrestling singlet. LEFT SIDE: matte anthracite with pressed hexagonal honeycomb texture, integrated compression sleeve to mid-bicep, leg portion extended to the KNEE. RIGHT SIDE: deep oxblood burgundy smooth fabric, narrow 2cm flat ribbon strap on shoulder, classic short wrestling leg length at groin crease. ONE single diagonal construction seam runs from left shoulder straight to right hip, dividing the two zones cleanly. Groin area has EVA foam under double-layer panel, the diagonal seam crosses through it. The dramatic difference in leg lengths is immediately visible. Red and blue rim lighting. Dark arena background. Face visible, fierce expression. 85mm lens.",
       "aspect": "3:4",
-      "caption": "Концепт «Берсерк» — намеренная асимметрия и контролируемый хаос. Не спортсмен — берсерк. Непредсказуемость как визуальное оружие.",
+      "caption": "Берсерк — структурная асимметрия, видимая с любой дистанции. Левая штанина до колена, правая — классическая.",
       "css_class": "figure-wide"
     },
     {
-      "id": "monolith-photo",
-      "prompt": "Professional sports photography of a massive heavyweight male wrestler standing motionless facing the camera on a wrestling mat. He wears a wrestling singlet designed to maximize visual mass: extremely wide 15cm shoulder straps creating a dramatic Y-silhouette on the back, horizontal bands across the chest that visually widen the torso. All black base with a single bold red stripe running diagonally. Minimal graphics, maximum volume — the uniform is architecture, not decoration. The wrestler stands with feet wide apart, arms slightly away from body, immovable stance like a wall. Dramatic top-down lighting emphasizing the massive silhouette. Dark background. Editorial sports photography, 85mm lens, monumental feeling.",
+      "id": "berserker-side",
+      "prompt": "Professional sports photography, side view of a heavyweight wrestler, 100+kg, massive build, standing in profile. He wears an asymmetric wrestling singlet. From this angle both sides visible: LEFT anthracite side with hexagonal honeycomb texture, compression sleeve to bicep, and KNEE-LENGTH leg portion. RIGHT oxblood burgundy smooth side with narrow strap and short classic leg. The single diagonal seam cuts across the torso like a geological fault line. Back shows mesh ventilation along spine with vertical number perforated through texture. The heavyweight's mass makes the asymmetry even more dramatic. Face turned away. Hard directional lighting, dark background. 135mm lens.",
       "aspect": "3:4",
-      "caption": "Концепт «Монолит» — весь дизайн решает одну задачу: борец выглядит на 10 кг тяжелее. Форма как архитектура.",
+      "caption": "Берсерк на тяжеловесе: антрацитовая сторона — броня, бордовая — скорость. Диагональ «разлома» делит тело пополам.",
+      "css_class": "figure-wide"
+    },
+    {
+      "id": "berserker-action",
+      "prompt": "Professional sports photography of two wrestlers grappling on a mat. The wrestler in asymmetric singlet controls from top in par terre position. His LEFT side shows anthracite hexagonal texture with knee-length leg and compression sleeve. RIGHT side shows oxblood smooth fabric with short leg. The single diagonal seam is visible under tension. The opponent in standard blue singlet provides contrast. The asymmetry is dramatic even in ground wrestling. Arena overhead lighting. Both wrestlers' faces partially visible. Motion and intensity captured. 70mm lens, 1/1000s.",
+      "aspect": "3:4",
+      "caption": "В партере асимметрия Берсерка читается ещё яснее: два разных силуэта на одном теле.",
+      "css_class": "figure-wide"
+    },
+    {
+      "id": "berserker-ghost",
+      "prompt": "Product photography of asymmetric wrestling singlet on invisible ghost mannequin, dark background. LEFT SIDE: matte anthracite with visible pressed hexagonal honeycomb texture, integrated sleeve to mid-bicep, leg extends to knee. RIGHT SIDE: deep oxblood burgundy smooth high-compression fabric, narrow 2cm flat ribbon strap with longitudinal rib, classic short leg. CENTER: single straight diagonal construction seam from left shoulder to right hip, 3mm width. BACK: mesh ventilation strip along spine with vertical number. Groin area: double-layered with EVA insert visible in construction. Two completely different garment halves joined by one fault line. Studio lighting emphasizing texture contrast. High detail product shot.",
+      "aspect": "3:4",
+      "caption": "Деконструкция: две текстуры, два цвета, одна диагональ. Контролируемый хаос в каждом шве.",
+      "css_class": "figure-wide"
+    },
+    {
+      "id": "sovereign-hero",
+      "prompt": "Professional sports photography of a male wrestler, 75kg, standing confidently facing camera. He wears a revolutionary wrestling singlet in deep oxblood burgundy. The fabric has CAVALRY TWILL diagonal texture, matte and noble like military suiting. ASYMMETRIC NECKLINE: left side rises higher toward base of neck, right side cut at deltoid — 4-5cm height difference, subtle but visible. A central OVERLAY PANEL 12-15cm wide runs from collarbone to waist in ottoman rib texture, layered over the base fabric. RAISED BONDED SEAMS (piping) 3-4mm wide run from shoulder through chest, narrowing at waist, diverging at hips — visible as architectural ridges. 8mm binding at neckline. Small embroidered flag 3x2cm on higher shoulder. Groin area flat with dart-constructed modesty panel. Dark studio background, side lighting emphasizing fabric textures. Face visible. 85mm lens.",
+      "aspect": "3:4",
+      "caption": "Sovereign — портновский крой на борцовском ковре. Cavalry twill, рельефные канты и overlay-планка создают архитектуру тела.",
+      "css_class": "figure-wide"
+    },
+    {
+      "id": "sovereign-heavy",
+      "prompt": "Professional sports photography, three-quarter rear view of a heavyweight wrestler, 100+kg, powerful build. He wears deep oxblood burgundy wrestling singlet with cavalry twill diagonal texture. The back reveals: raised bonded seam piping lines converging at lumbar region, creating diamond-shaped compression panel over lower back. Asymmetric neckline visible — higher left side, lower right. The central overlay panel on front is visible wrapping slightly to the side. Racerback-influenced upper back exposes both scapulae. The heavyweight's mass is sculpted by the three compression zones. 8mm binding at neck. Groin panel maintains flat profile from this angle. Dark studio, warm tungsten light. Face not visible — turned away. 85mm lens.",
+      "aspect": "3:4",
+      "caption": "Sovereign сзади: рельефные канты сходятся на пояснице как вытачки пиджака. Три зоны компрессии скульптурируют тело.",
+      "css_class": "figure-wide"
+    },
+    {
+      "id": "sovereign-action",
+      "prompt": "Dynamic sports photography of two wrestlers mid-throw. The attacker in deep oxblood burgundy singlet with cavalry twill texture executes a powerful hip throw. Even in motion the architectural construction is visible: raised bonded seam piping maintains geometry, the overlay chest panel stretches across the flexed core, asymmetric neckline holds position. The matte cavalry twill catches light differently than standard shiny singlet — sophisticated, non-reflective. Opponent in standard singlet for contrast. The groin panel stays flat during wide-stance throw. Arena lighting, frozen action. Faces partially obscured by motion. 200mm telephoto, 1/1000s.",
+      "aspect": "3:4",
+      "caption": "В действии Sovereign выглядит как безупречно скроенный костюм — каждый шов держит геометрию даже в броске.",
+      "css_class": "figure-wide"
+    },
+    {
+      "id": "sovereign-ghost",
+      "prompt": "Product photography of wrestling singlet on ghost mannequin, dark background. Deep oxblood burgundy with cavalry twill diagonal texture — visible diagonal fabric grain like military suiting, NOT shiny. Asymmetric neckline: one side 4-5cm higher. Central overlay panel 12-15cm wide in ottoman rib texture, layered over base. Raised bonded seam piping 3-4mm wide as prominent architectural ridges from shoulder through chest, narrowing at waist, diverging at hips. Three compression zones visible through fabric density. 8mm binding at neck. Flag patch on higher shoulder. Groin panel shows dart construction for flat profile. Interior showing compression brief layer. Two textures clearly visible: diagonal twill base + ribbed overlay. Soft studio lighting. High detail product shot.",
+      "aspect": "3:4",
+      "caption": "Два слоя ткани: cavalry twill база и ottoman rib планка. Рельефные канты — каждый шов как на ботинке ручной работы.",
+      "css_class": "figure-wide"
+    },
+    {
+      "id": "stratum-hero",
+      "prompt": "Professional sports photography of a male wrestler, 75kg, standing facing camera in confident pose. He wears a near-black wrestling singlet with THREE distinct fabric textures. ASYMMETRIC STRAPS: left standard 5cm, right widened to 10cm covering the deltoid as cap-sleeve. Center torso panel in matte shark-skin microtexture, completely light-absorbing. Side panels feature laser micro-perforations with DARK GRAPHITE underlayer barely visible — NOT bronze, NOT gold, subtle charcoal shadow depth. Right cap-sleeve and outer thighs have dot-matrix micro-grip texture. ONE DIAGONAL RAISED SEAM from right shoulder to left hip divides texture zones. Contrast stitching in dark bronze/copper thread — the ONLY color accent. High-cut leg openings. Groin area structured flat with internal brief and EVA insert. Dark background, side lighting emphasizing textures. Face visible. 85mm lens.",
+      "aspect": "3:4",
+      "caption": "Stratum — три функциональные текстуры, одна диагональ, ноль декора. Красота в инженерии.",
+      "css_class": "figure-wide"
+    },
+    {
+      "id": "stratum-detail",
+      "prompt": "Extreme macro close-up photograph of wrestling singlet fabric showing the boundary between two textile zones. LEFT: matte shark-skin textured fabric, very fine directional grain, completely matte, absorbs all light, near-black. RIGHT: laser-perforated fabric with hundreds of tiny precise 1mm circular holes, through which a dark graphite underlayer is barely visible as subtle shadow depth. BETWEEN them: one raised welted seam with dark bronze copper topstitching thread, physically raised 2mm above surface. Dramatic side lighting to emphasize textures. Macro lens f/2.8, studio lighting. Black background.",
+      "aspect": "3:4",
+      "caption": "Макро: shark-skin, лазерная перфорация с графитовым подкладом и медная строчка — три масштаба восприятия.",
+      "css_class": "figure-wide"
+    },
+    {
+      "id": "stratum-action",
+      "prompt": "Dynamic sports photography of two wrestlers grappling in competition. The wrestler in near-black Stratum singlet is in dominant position. The asymmetric shoulders visible: one standard strap, one widened cap-sleeve. The diagonal raised seam catches arena light across the torso. Shark-skin center panel absorbs light while perforated side panels stretch showing graphite underlay. The opponent in standard red singlet provides stark contrast — the Stratum singlet looks like engineered equipment vs basic athletic wear. Groin panel flat even in motion. Arena lighting from above. Faces partially visible. 70mm, 1/1000s.",
+      "aspect": "3:4",
+      "caption": "Под софитами Stratum работает на трёх дистанциях: асимметрия плеч с трибуны, диагональ со средней, текстуры вблизи.",
+      "css_class": "figure-wide"
+    },
+    {
+      "id": "stratum-ghost",
+      "prompt": "Product photography of near-black wrestling singlet on ghost mannequin, dark background. THREE TEXTURE ZONES visible: center panel in matte shark-skin absorbing light, side panels with laser micro-perforation showing dark graphite underlayer through tiny holes, and cap-sleeve plus outer thigh with dot-matrix micro-grip. Asymmetric straps: left narrow, right wide cap-sleeve. Diagonal raised welted seam from right shoulder to left hip with dark bronze copper contrast stitching. High-cut leg openings. Groin panel double-layered flat construction. Interior showing compression brief with EVA insert. No logos. Soft even studio lighting revealing all three textures. High resolution product catalog quality.",
+      "aspect": "3:4",
+      "caption": "Ghost mannequin: три текстурных страты, асимметрия плеч и медная строчка — единственный цвет на чёрном.",
+      "css_class": "figure-wide"
+    },
+    {
+      "id": "kodex-hero",
+      "prompt": "Professional sports photography of a male wrestler, 75kg, standing in calm confident stance facing camera. He wears a deep indigo wrestling singlet with visible MICRO-OXFORD weave texture — matte, woven appearance, NOT shiny. TWO FLAT DIAGONAL PANELS cross on the chest starting 3cm below collarbone, meeting at solar plexus at 25-30 degree angle, creating a structural V-line. A 2cm bonded standing edge at neckline, half-shade darker. A 5cm-wide denser horizontal WAISTBAND zone creates visual obi effect. All seams are tonal, one shade lighter, resembling hand-stitching. Shorts to mid-thigh with diagonal panel lines continuing from top. Groin area covered by front apron-panel extending from chest wrap overlap. Back completely clean. Dark moody studio background, single dramatic side light. Face visible, disciplined expression. 85mm lens.",
+      "aspect": "3:4",
+      "caption": "Кодекс — диагональный запах создаёт V-структуру на груди. Не кимоно — архитектурная цитата, вшитая в крой.",
+      "css_class": "figure-wide"
+    },
+    {
+      "id": "kodex-side",
+      "prompt": "Professional sports photography, side profile of a heavyweight wrestler, 100+kg, standing in profile. He wears a deep indigo wrestling singlet with micro-oxford woven matte texture. Side view reveals: the 2cm bonded standing edge at neck wraps around giving structure, the diagonal chest panels visible crossing at solar plexus creating depth, the 5cm dense waistband zone at hip, and shorts ending mid-thigh. The matte woven texture is clearly different from standard shiny singlet fabric — it looks like quality tailored garment. Groin area smooth and flat from side angle. Face turned away, only back of head visible. Moody warm side light, dark background. The heavyweight's mass framed by clean austere lines. 85mm lens.",
+      "aspect": "3:4",
+      "caption": "Кодекс на тяжеловесе: микро-оксфордское плетение и поясная зона-оби создают ощущение ритуальной формы.",
+      "css_class": "figure-wide"
+    },
+    {
+      "id": "kodex-plum",
+      "prompt": "Professional sports photography of a lightweight male wrestler, 60kg, lean defined build, standing in three-quarter front view. He wears the same design wrestling singlet but in DEEP PLUM color (dark purple, like Japanese murasaki). Micro-oxford woven texture visible. Diagonal chest panels crossing at solar plexus. 2cm bonded neckline. 5cm waistband zone. Tonal seams one shade lighter than plum. The rare plum color in a wrestling context is striking and dignified — like a precious stone. Groin apron-panel smooth. Dark studio background, cool-toned lighting. Face visible, calm focused expression. 85mm lens.",
+      "aspect": "3:4",
+      "caption": "Кодекс в сливовом (мурасаки): цвет высшего ранга в Японии. Редкость в спорте — мгновенная узнаваемость.",
+      "css_class": "figure-wide"
+    },
+    {
+      "id": "kodex-ghost",
+      "prompt": "Product photography of wrestling singlet on ghost mannequin, dark background. Deep indigo with micro-oxford woven texture — visible fine basket-weave surface, matte, NOT shiny. Two flat diagonal panels crossing on chest, starting 3cm below collarbone, meeting at solar plexus. 2cm bonded standing edge at neckline, slightly darker. 5cm dense horizontal waistband zone. All flat-felled seams in thread one shade lighter. Front apron-panel extends from chest wrap covering groin area naturally. Shorts with diagonal panel lines. Back is COMPLETELY CLEAN — only subtle tonal debossed mark at center upper back. Interior showing three-layer groin construction. Soft studio lighting revealing woven texture. High detail product photography.",
+      "aspect": "3:4",
+      "caption": "Конструкция: диагональный запах, поясная зона, передник-панель — каждый элемент оправдан функцией.",
+      "css_class": "figure-wide"
+    },
+    {
+      "id": "cocoon-hero",
+      "prompt": "Professional sports photography of a male wrestler, 75kg, standing upright facing camera, arms slightly away from body. He wears a deep charcoal graphite wrestling singlet with 10-PANEL CONSTRUCTION. Center torso panel has visible PIQUE KNIT texture — subtle raised diamond grid, different from smooth side panels. KIMONO-CUT SHOULDERS: no shoulder seam, fabric continues seamlessly from BOAT NECKLINE to mid-deltoid, creating wide strong horizontal shoulder line. Boat neck with 1.5cm structural binding. SILVER-GRAY flat-felled seams visible as architectural blueprint lines across body. DIAGONAL-CUT leg openings: front 2cm above knee, back 4cm above knee. Side seam shifted to back. Groin panel completely flat — triple layer system. Dark background, studio lighting revealing texture contrast between pique center and smooth sides. Face visible. 85mm lens.",
+      "aspect": "3:4",
+      "caption": "Кокон — панельная архитектура тела. Пикейная текстура на торсе читается как нагрудная пластина.",
+      "css_class": "figure-wide"
+    },
+    {
+      "id": "cocoon-heavy",
+      "prompt": "Professional sports photography, side view of heavyweight wrestler, 105kg, powerful build, standing in profile. He wears deep charcoal graphite singlet with multi-panel construction. Side shows: contrast between matte pique-textured center torso panel and smooth side panels with micro-perforation, kimono-cut shoulder creating wide shoulder line with no shoulder seam, boat neckline with structural binding. The diagonal-cut leg opening visible from side — shorter in back, longer in front. Silver-gray seams trace construction lines along body. The heavyweight looks monumental, the panel construction sculpting his mass. Groin area smooth flat from side angle. Face turned away. Hard overhead lighting emphasizing texture differences. Dark background. 85mm lens.",
+      "aspect": "3:4",
+      "caption": "Кокон на тяжеловесе: кимоно-крой расширяет плечи без подплечников. Серебристые швы — чертёж на теле.",
+      "css_class": "figure-wide"
+    },
+    {
+      "id": "cocoon-back",
+      "prompt": "Professional sports photography, three-quarter rear view of lightweight wrestler, 60kg, lean build, looking over shoulder. He wears deep charcoal graphite singlet. BACK VIEW reveals kimono-cut construction — no shoulder seam, fabric continues smoothly from neck across shoulder cap to deltoid. Central back panel in pique texture flanked by smooth lateral panels. Silver-gray flat-felled seams map the construction like blueprints. Boat neckline binding visible as clean horizontal line at nape. Diagonal-cut leg openings: the angled hem is clearly visible. All construction seams precise and industrial. The lean build makes every panel boundary read clearly. Dark studio background, rim light from behind. Face turned away. 85mm lens.",
+      "aspect": "3:4",
+      "caption": "Кимоно-крой: плечевой шов отсутствует — ткань течёт от горловины до дельты единым полотном.",
+      "css_class": "figure-wide"
+    },
+    {
+      "id": "cocoon-ghost",
+      "prompt": "Product photography of wrestling singlet on ghost mannequin, white background. Deep charcoal graphite, 10-panel construction. CENTER PANEL: pique knit texture with subtle raised diamond grid. SIDE PANELS: smooth matte fabric with micro-perforation in underarm zones. KIMONO-CUT SHOULDERS: no shoulder seam visible, one continuous panel from boat neckline to mid-deltoid. Boat neck with 1.5cm structural binding. Silver-gray flat-felled seams prominent as construction lines. DIAGONAL-CUT leg openings: front longer, back shorter, laser-cut melted edge, no hem. Interior showing triple-layer groin construction — compression hammock, 320 GSM panel, dart fold. The garment reads as engineered architecture. Soft even studio lighting. High detail product shot on white.",
+      "aspect": "3:4",
+      "caption": "Анатомия Кокона: 10 панелей, диагональный срез штанин, тройная паховая система.",
       "css_class": "figure-wide"
     },
     {
       "id": "before-after",
-      "prompt": "Professional sports photography, split comparison image showing two wrestlers side by side. LEFT SIDE: a wrestler wearing a plain, generic, unflattering red wrestling singlet, traditional basic design with thin straps, looks like underwear, standing flat-footed under flat fluorescent gym lighting, looking unimpressive and awkward. RIGHT SIDE: the same body type wrestler wearing a futuristic dark tactical wrestling singlet with wide shoulder straps, textured surface zones, geometric armor-like panels, glowing accent lines, standing in a powerful dominant stance under dramatic arena spotlights, looking like a weapon. Both wrestlers face the camera. Clear dramatic contrast between old boring design and new powerful revolutionary design. Editorial comparison photography, 85mm lens.",
+      "prompt": "Professional sports photography, split comparison image showing two wrestlers side by side facing camera. LEFT SIDE: a wrestler wearing a plain generic unflattering red wrestling singlet, traditional thin straps, looks like underwear, standing flat-footed under flat fluorescent gym lighting, visible groin bulge, looking unimpressive and awkward. RIGHT SIDE: same body type wrestler wearing a dark anthracite revolutionary wrestling unitard with wide shoulder straps, micro-textured surface, architectural seam lines, structured flat groin panel, standing in powerful dominant stance under dramatic arena spotlights, looking like a weapon. TRADITIONAL vs REVOLUTIONARY labels at bottom. Clear dramatic contrast. 85mm lens, editorial comparison.",
       "aspect": "16:9",
-      "caption": "Слева — стандартное трико, превращающее атлета в школьника. Справа — форма, превращающая его в оружие.",
+      "caption": "Слева — стандартное трико. Справа — форма, достойная чемпиона мира.",
       "css_class": "figure-full"
     }
   ]
