@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a0f"/>
+      <stop offset="50%" style="stop-color:#14141f"/>
+      <stop offset="100%" style="stop-color:#0d0c11"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#d4a574"/>
+      <stop offset="100%" style="stop-color:#8b7355"/>
+    </linearGradient>
+    <linearGradient id="fadeGold" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#d4a574;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#d4a574;stop-opacity:0"/>
+    </linearGradient>
+    <clipPath id="circleClip">
+      <circle cx="600" cy="350" r="220"/>
+    </clipPath>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="20" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="700" fill="url(#bgGrad)"/>
+
+  <!-- Subtle grid pattern -->
+  <g opacity="0.03" stroke="#d4a574" stroke-width="0.5">
+    <line x1="0" y1="0" x2="0" y2="700" transform="translate(100,0)"/>
+    <line x1="0" y1="0" x2="0" y2="700" transform="translate(200,0)"/>
+    <line x1="0" y1="0" x2="0" y2="700" transform="translate(300,0)"/>
+    <line x1="0" y1="0" x2="0" y2="700" transform="translate(400,0)"/>
+    <line x1="0" y1="0" x2="0" y2="700" transform="translate(500,0)"/>
+    <line x1="0" y1="0" x2="0" y2="700" transform="translate(600,0)"/>
+    <line x1="0" y1="0" x2="0" y2="700" transform="translate(700,0)"/>
+    <line x1="0" y1="0" x2="0" y2="700" transform="translate(800,0)"/>
+    <line x1="0" y1="0" x2="0" y2="700" transform="translate(900,0)"/>
+    <line x1="0" y1="0" x2="0" y2="700" transform="translate(1000,0)"/>
+    <line x1="0" y1="0" x2="0" y2="700" transform="translate(1100,0)"/>
+    <line x1="0" y1="100" x2="1200" y2="100"/>
+    <line x1="0" y1="200" x2="1200" y2="200"/>
+    <line x1="0" y1="300" x2="1200" y2="300"/>
+    <line x1="0" y1="400" x2="1200" y2="400"/>
+    <line x1="0" y1="500" x2="1200" y2="500"/>
+    <line x1="0" y1="600" x2="1200" y2="600"/>
+  </g>
+
+  <!-- Central glow -->
+  <circle cx="600" cy="350" r="250" fill="url(#fadeGold)" filter="url(#softGlow)" opacity="0.4"/>
+
+  <!-- Stylized wrestler silhouette (abstract/geometric) -->
+  <g transform="translate(600, 350)" filter="url(#glow)">
+    <!-- Outer ring — arena/mat -->
+    <circle cx="0" cy="0" r="200" fill="none" stroke="#d4a574" stroke-width="1" opacity="0.2"/>
+    <circle cx="0" cy="0" r="160" fill="none" stroke="#d4a574" stroke-width="0.5" opacity="0.1"/>
+
+    <!-- Abstract figure — standing wrestler (geometric) -->
+    <g opacity="0.9">
+      <!-- Torso -->
+      <path d="M-30,-80 L-40,-10 L-20,40 L0,50 L20,40 L40,-10 L30,-80 Z"
+            fill="none" stroke="url(#goldGrad)" stroke-width="2"/>
+      <!-- Head -->
+      <circle cx="0" cy="-100" r="22" fill="none" stroke="url(#goldGrad)" stroke-width="2"/>
+      <!-- Arms -->
+      <path d="M-40,-10 L-80,-40 L-90,-30" fill="none" stroke="url(#goldGrad)" stroke-width="1.5" stroke-linecap="round"/>
+      <path d="M40,-10 L80,-40 L90,-30" fill="none" stroke="url(#goldGrad)" stroke-width="1.5" stroke-linecap="round"/>
+      <!-- Legs -->
+      <path d="M-20,40 L-35,100 L-30,120" fill="none" stroke="url(#goldGrad)" stroke-width="1.5" stroke-linecap="round"/>
+      <path d="M20,40 L35,100 L30,120" fill="none" stroke="url(#goldGrad)" stroke-width="1.5" stroke-linecap="round"/>
+    </g>
+
+    <!-- Transformation arrows / design lines -->
+    <g opacity="0.15">
+      <!-- Left design elements -->
+      <line x1="-120" y1="-60" x2="-60" y2="-40" stroke="#d4a574" stroke-width="0.5"/>
+      <line x1="-130" y1="-30" x2="-70" y2="-15" stroke="#d4a574" stroke-width="0.5"/>
+      <line x1="-120" y1="0" x2="-65" y2="10" stroke="#d4a574" stroke-width="0.5"/>
+      <!-- Right design elements -->
+      <line x1="120" y1="-60" x2="60" y2="-40" stroke="#d4a574" stroke-width="0.5"/>
+      <line x1="130" y1="-30" x2="70" y2="-15" stroke="#d4a574" stroke-width="0.5"/>
+      <line x1="120" y1="0" x2="65" y2="10" stroke="#d4a574" stroke-width="0.5"/>
+    </g>
+
+    <!-- Small accent dots -->
+    <circle cx="-150" cy="-80" r="2" fill="#d4a574" opacity="0.3"/>
+    <circle cx="150" cy="-80" r="2" fill="#d4a574" opacity="0.3"/>
+    <circle cx="-140" cy="30" r="1.5" fill="#d4a574" opacity="0.2"/>
+    <circle cx="140" cy="30" r="1.5" fill="#d4a574" opacity="0.2"/>
+    <circle cx="0" cy="150" r="2" fill="#d4a574" opacity="0.2"/>
+  </g>
+
+  <!-- Decorative corner elements -->
+  <g stroke="#d4a574" stroke-width="0.5" opacity="0.15">
+    <!-- Top-left corner -->
+    <line x1="40" y1="40" x2="120" y2="40"/>
+    <line x1="40" y1="40" x2="40" y2="120"/>
+    <!-- Top-right corner -->
+    <line x1="1160" y1="40" x2="1080" y2="40"/>
+    <line x1="1160" y1="40" x2="1160" y2="120"/>
+    <!-- Bottom-left corner -->
+    <line x1="40" y1="660" x2="120" y2="660"/>
+    <line x1="40" y1="660" x2="40" y2="580"/>
+    <!-- Bottom-right corner -->
+    <line x1="1160" y1="660" x2="1080" y2="660"/>
+    <line x1="1160" y1="660" x2="1160" y2="580"/>
+  </g>
+
+  <!-- Issue number -->
+  <text x="80" y="80" font-family="'Cormorant Garamond', Georgia, serif" font-size="14"
+        fill="#d4a574" opacity="0.3" letter-spacing="3">NO. 01</text>
+
+  <!-- Category label -->
+  <text x="1120" y="80" font-family="'Cormorant Garamond', Georgia, serif" font-size="12"
+        fill="#d4a574" opacity="0.25" letter-spacing="4" text-anchor="end">SPORT &amp; DESIGN</text>
+
+  <!-- Bottom text -->
+  <text x="600" y="660" font-family="'Cormorant Garamond', Georgia, serif" font-size="11"
+        fill="#d4a574" opacity="0.2" letter-spacing="6" text-anchor="middle">GRIMOIRE</text>
+</svg>

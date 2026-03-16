@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grimoire — Книга идей, исследований и концептов</title>
+  <meta name="description" content="Grimoire — коллекция глубоких исследований, смелых концептов и визуальных историй. Лонгриды о том, что заслуживает внимания.">
+  <meta property="og:title" content="Grimoire — Книга идей">
+  <meta property="og:description" content="Коллекция глубоких исследований, смелых концептов и визуальных историй.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📖</text></svg>">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <style>
+    /* Page-load animation */
+    body:not(.loaded) { opacity: 0; }
+    body.loaded { opacity: 1; transition: opacity 0.6s ease; }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="site-nav" role="navigation" aria-label="Главная навигация">
+    <a href="/" class="nav-logo">
+      Grimoire <span>グリモワール</span>
+    </a>
+    <div class="nav-actions">
+      <button class="theme-toggle" aria-label="Переключить тему" aria-pressed="false" role="switch">
+        <span class="sr-only">Тёмная / Светлая тема</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-ornament hero-ornament--top" aria-hidden="true">G</div>
+    <div class="hero-ornament hero-ornament--bottom" aria-hidden="true">r</div>
+
+    <span class="hero-badge">
+      Коллекция знаний
+    </span>
+
+    <h1 class="hero-title"><em>Grimoire</em></h1>
+
+    <p class="hero-subtitle">Книга идей, исследований и концептов</p>
+    <p class="hero-subtitle-jp">アイデアと研究の書</p>
+
+    <div class="hero-divider" aria-hidden="true"></div>
+
+    <p class="hero-description">
+      Каждая статья — заклинание, превращающее сырую идею в исследование
+      с фактами, визуализацией и смелым дизайном. Здесь концепты
+      становятся осязаемыми.
+    </p>
+
+    <div class="hero-scroll-hint" aria-hidden="true">
+      Читать
+    </div>
+  </header>
+
+  <!-- Articles Section -->
+  <section>
+    <div class="section-header">
+      <span class="section-label">Заклинания</span>
+      <h2 class="section-title">Опубликованные исследования</h2>
+    </div>
+
+    <div class="articles-grid">
+
+      <!-- Featured Article Card -->
+      <article class="article-card">
+        <a href="articles/wrestling-uniform-revolution/" class="card-inner">
+          <div class="card-image">
+            <img src="articles/wrestling-uniform-revolution/cover.svg" alt="Революция формы борцов" loading="lazy">
+            <span class="card-category">Спорт & Дизайн</span>
+          </div>
+          <div class="card-content">
+            <div class="card-meta">
+              <span>16 марта 2026</span>
+              <span class="card-meta-divider"></span>
+              <span>12 минут чтения</span>
+            </div>
+            <h3 class="card-title">Почему сильнейшие атлеты мира выглядят как&nbsp;в&nbsp;нижнем белье</h3>
+            <p class="card-excerpt">
+              Чемпион мира по вольной борьбе — один из самых физически
+              подготовленных людей на планете. Но его форма не передаёт
+              и десятой доли этой мощи. Исследуем проблему и предлагаем
+              концепт формы, достойной гладиатора.
+            </p>
+            <div class="card-footer">
+              <span class="card-read-more">
+                Читать
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </span>
+              <span class="card-number">01</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <!-- Placeholder for future articles -->
+      <article class="article-card">
+        <div class="card-placeholder">
+          Следующее заклинание уже готовится...
+        </div>
+      </article>
+
+      <article class="article-card">
+        <div class="card-placeholder">
+          Идеи никогда не заканчиваются
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-divider" aria-hidden="true"></div>
+    <div class="footer-logo">Grimoire</div>
+    <ul class="footer-links">
+      <li><a href="https://github.com/luvor/grimoire" target="_blank" rel="noopener">GitHub</a></li>
+    </ul>
+    <p class="footer-copy">Каждая идея заслуживает глубокого исследования.</p>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
