@@ -740,6 +740,9 @@ img {
   color: var(--color-text-muted);
   letter-spacing: 0.05em;
   transition: color var(--duration-fast) var(--ease-out);
+  /* Ensure 44px touch target on mobile */
+  padding: var(--space-sm) var(--space-md);
+  margin: calc(var(--space-sm) * -1) calc(var(--space-md) * -1);
 }
 
 .footer-links a:hover {

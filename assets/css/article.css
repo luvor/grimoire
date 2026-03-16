@@ -459,8 +459,9 @@
 
 @media (max-width: 767px) {
   .figure-wide {
-    width: calc(100% + var(--space-xl) * 2);
-    margin-left: calc(var(--space-xl) * -1);
+    width: calc(100% + var(--space-md) * 2);
+    margin-left: calc(var(--space-md) * -1);
+    margin-right: calc(var(--space-md) * -1);
   }
 }
 
