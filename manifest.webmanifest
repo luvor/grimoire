@@ -1,0 +1,40 @@
+{
+  "name": "Grimoire — Книга идей и исследований",
+  "short_name": "Grimoire",
+  "description": "Коллекция глубоких исследований, смелых концептов и визуальных историй.",
+  "start_url": "/grimoire/",
+  "scope": "/grimoire/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#0a0a0f",
+  "background_color": "#0a0a0f",
+  "icons": [
+    {
+      "src": "assets/images/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/images/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/images/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "assets/images/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "categories": ["education", "magazines", "news"],
+  "lang": "ru",
+  "dir": "ltr"
+}

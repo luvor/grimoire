@@ -2,14 +2,22 @@
 <html lang="ru" data-theme="dark">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>{{ARTICLE_TITLE}} — Grimoire</title>
   <meta name="description" content="{{ARTICLE_EXCERPT}}">
   <meta property="og:title" content="{{ARTICLE_TITLE}} — Grimoire">
   <meta property="og:description" content="{{ARTICLE_EXCERPT}}">
   <meta property="og:image" content="{{COVER_IMAGE_URL}}">
   <meta property="og:type" content="article">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📖</text></svg>">
+  <!-- PWA -->
+  <meta name="theme-color" content="#0a0a0f" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#faf8f5" media="(prefers-color-scheme: light)">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Grimoire">
+  <link rel="manifest" href="../../manifest.webmanifest">
+  <link rel="apple-touch-icon" href="../../assets/images/apple-touch-icon.png">
+  <link rel="icon" href="../../assets/images/icon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../../assets/css/main.css">
   <link rel="stylesheet" href="../../assets/css/article.css">
   <style>
@@ -116,5 +124,10 @@
 
   <script src="../../assets/js/main.js"></script>
   <script src="../../assets/js/article.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('../../sw.js', { scope: '/grimoire/' }).catch(() => {});
+    }
+  </script>
 </body>
 </html>

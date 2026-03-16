@@ -6,7 +6,7 @@
 /* ── Reading Progress Bar ──────────────────────────── */
 .reading-progress {
   position: fixed;
-  top: 0;
+  top: env(safe-area-inset-top, 0px);
   left: 0;
   width: 0%;
   height: 2px;
@@ -21,6 +21,7 @@
   position: relative;
   width: 100%;
   min-height: 70vh;
+  min-height: 70dvh;
   display: flex;
   align-items: flex-end;
   overflow: hidden;
@@ -691,8 +692,8 @@
 /* ── Back to top ───────────────────────────────────── */
 .back-to-top {
   position: fixed;
-  bottom: var(--space-xl);
-  right: var(--space-xl);
+  bottom: calc(var(--space-xl) + env(safe-area-inset-bottom, 0px));
+  right: calc(var(--space-xl) + env(safe-area-inset-right, 0px));
   width: 44px;
   height: 44px;
   display: flex;
@@ -722,6 +723,101 @@
 .back-to-top svg {
   width: 18px;
   height: 18px;
+}
+
+/* ── Mobile Article Styles ─────────────────────────── */
+@media (max-width: 767px) {
+  .article-hero {
+    min-height: 50vh;
+    min-height: 50dvh;
+  }
+
+  .article-hero-content {
+    padding: var(--space-2xl) var(--space-md) var(--space-xl);
+  }
+
+  .article-title {
+    font-size: var(--text-3xl);
+  }
+
+  .article-subtitle {
+    font-size: var(--text-lg);
+  }
+
+  .article-body {
+    padding: var(--space-2xl) var(--space-md);
+    font-size: var(--text-base);
+  }
+
+  .article-body h2 {
+    font-size: var(--text-2xl);
+    margin-top: var(--space-3xl);
+  }
+
+  .article-body h3 {
+    font-size: var(--text-xl);
+  }
+
+  .article-body blockquote {
+    padding: var(--space-md) var(--space-lg);
+    margin: var(--space-2xl) 0;
+  }
+
+  .article-body blockquote p {
+    font-size: var(--text-lg);
+  }
+
+  .pull-quote {
+    padding: var(--space-2xl) var(--space-md);
+    margin: var(--space-3xl) auto;
+  }
+
+  .pull-quote p {
+    font-size: var(--text-2xl);
+  }
+
+  .info-box {
+    padding: var(--space-lg) var(--space-md);
+    margin: var(--space-xl) 0;
+  }
+
+  .article-footer {
+    padding: 0 var(--space-md);
+  }
+
+  .article-tags {
+    gap: var(--space-xs);
+  }
+
+  .diagram {
+    padding: var(--space-md);
+    margin: var(--space-2xl) 0;
+  }
+
+  /* Back-to-top touch-friendly */
+  .back-to-top {
+    width: 48px;
+    height: 48px;
+    bottom: calc(var(--space-md) + env(safe-area-inset-bottom, 0px));
+    right: calc(var(--space-md) + env(safe-area-inset-right, 0px));
+  }
+
+  /* Fix scroll-margin for mobile nav height */
+  .article-body h2,
+  .article-body h3 {
+    scroll-margin-top: calc(4rem + env(safe-area-inset-top, 0px));
+  }
+}
+
+/* ── Standalone PWA article mode ──────────────────── */
+@media (display-mode: standalone) {
+  .article-hero-content {
+    padding-top: calc(var(--space-4xl) + env(safe-area-inset-top, 0px));
+  }
+
+  .back-to-top {
+    bottom: calc(var(--space-xl) + env(safe-area-inset-bottom, 0px));
+  }
 }
 
 /* ── Article Print Styles ──────────────────────────── */

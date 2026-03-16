@@ -22,6 +22,12 @@
     if (toggle) {
       toggle.setAttribute('aria-pressed', theme === 'light' ? 'true' : 'false');
     }
+    // Update theme-color meta for browser chrome / PWA
+    document.querySelectorAll('meta[name="theme-color"]').forEach(m => m.remove());
+    const meta = document.createElement('meta');
+    meta.name = 'theme-color';
+    meta.content = theme === 'light' ? '#faf8f5' : '#0a0a0f';
+    document.head.appendChild(meta);
   }
 
   // Apply theme immediately to prevent flash
