@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 300">
+  <defs>
+    <linearGradient id="tBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a0f"/>
+      <stop offset="100%" style="stop-color:#14141f"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="300" fill="url(#tBg)"/>
+
+  <!-- Title -->
+  <text x="450" y="30" font-family="'Cormorant Garamond', Georgia, serif" font-size="13"
+        fill="#d4a574" text-anchor="middle" letter-spacing="4" opacity="0.7">ЭВОЛЮЦИЯ БОРЦОВСКОЙ ФОРМЫ</text>
+
+  <!-- Main timeline line -->
+  <line x1="60" y1="180" x2="840" y2="180" stroke="#d4a574" stroke-width="1" opacity="0.2"/>
+
+  <!-- Era markers and content -->
+
+  <!-- 708 BC -->
+  <g transform="translate(100, 180)">
+    <circle cx="0" cy="0" r="4" fill="#d4a574" opacity="0.4"/>
+    <line x1="0" y1="-8" x2="0" y2="-50" stroke="#d4a574" stroke-width="0.5" opacity="0.2"/>
+    <!-- Naked figure silhouette -->
+    <circle cx="0" cy="-70" r="7" fill="none" stroke="#6b6b7b" stroke-width="1"/>
+    <line x1="0" y1="-63" x2="0" y2="-45" stroke="#6b6b7b" stroke-width="1"/>
+    <path d="M-8,-58 L8,-58" stroke="#6b6b7b" stroke-width="1"/>
+    <path d="M0,-45 L-6,-30 M0,-45 L6,-30" stroke="#6b6b7b" stroke-width="1"/>
+    <text x="0" y="20" font-family="'Source Serif 4', Georgia, serif" font-size="11"
+          fill="#d4a574" text-anchor="middle" font-weight="600">708 до н.э.</text>
+    <text x="0" y="35" font-family="'Source Serif 4', Georgia, serif" font-size="9"
+          fill="#6b6b7b" text-anchor="middle">Обнажённые</text>
+    <text x="0" y="47" font-family="'Source Serif 4', Georgia, serif" font-size="9"
+          fill="#6b6b7b" text-anchor="middle">греки</text>
+  </g>
+
+  <!-- 1912 -->
+  <g transform="translate(250, 180)">
+    <circle cx="0" cy="0" r="4" fill="#d4a574" opacity="0.4"/>
+    <line x1="0" y1="-8" x2="0" y2="-50" stroke="#d4a574" stroke-width="0.5" opacity="0.2"/>
+    <!-- Singlet figure -->
+    <circle cx="0" cy="-70" r="7" fill="none" stroke="#6b6b7b" stroke-width="1"/>
+    <path d="M-6,-58 L-8,-40 L8,-40 L6,-58 Z" fill="none" stroke="#6b6b7b" stroke-width="1"/>
+    <path d="M0,-40 L-4,-30 M0,-40 L4,-30" stroke="#6b6b7b" stroke-width="1"/>
+    <text x="0" y="20" font-family="'Source Serif 4', Georgia, serif" font-size="11"
+          fill="#d4a574" text-anchor="middle" font-weight="600">1912</text>
+    <text x="0" y="35" font-family="'Source Serif 4', Georgia, serif" font-size="9"
+          fill="#6b6b7b" text-anchor="middle">Первый</text>
+    <text x="0" y="47" font-family="'Source Serif 4', Georgia, serif" font-size="9"
+          fill="#6b6b7b" text-anchor="middle">singlet</text>
+  </g>
+
+  <!-- 1960s -->
+  <g transform="translate(400, 180)">
+    <circle cx="0" cy="0" r="4" fill="#d4a574" opacity="0.4"/>
+    <line x1="0" y1="-8" x2="0" y2="-50" stroke="#d4a574" stroke-width="0.5" opacity="0.2"/>
+    <!-- Three-piece figure -->
+    <circle cx="0" cy="-70" r="7" fill="none" stroke="#6b6b7b" stroke-width="1"/>
+    <path d="M-8,-58 L-10,-35 L10,-35 L8,-58 Z" fill="none" stroke="#6b6b7b" stroke-width="1"/>
+    <line x1="-6" y1="-42" x2="6" y2="-42" stroke="#6b6b7b" stroke-width="0.5"/>
+    <path d="M0,-35 L-5,-25 M0,-35 L5,-25" stroke="#6b6b7b" stroke-width="1"/>
+    <text x="0" y="20" font-family="'Source Serif 4', Georgia, serif" font-size="11"
+          fill="#d4a574" text-anchor="middle" font-weight="600">1960-е</text>
+    <text x="0" y="35" font-family="'Source Serif 4', Georgia, serif" font-size="9"
+          fill="#6b6b7b" text-anchor="middle">3 элемента</text>
+  </g>
+
+  <!-- 1970s -->
+  <g transform="translate(530, 180)">
+    <circle cx="0" cy="0" r="4" fill="#d4a574" opacity="0.4"/>
+    <line x1="0" y1="-8" x2="0" y2="-50" stroke="#d4a574" stroke-width="0.5" opacity="0.2"/>
+    <!-- Modern singlet figure -->
+    <circle cx="0" cy="-70" r="7" fill="none" stroke="#6b6b7b" stroke-width="1"/>
+    <path d="M-5,-58 L-7,-38 L7,-38 L5,-58 Z" fill="none" stroke="#6b6b7b" stroke-width="1"/>
+    <path d="M0,-38 L-5,-28 M0,-38 L5,-28" stroke="#6b6b7b" stroke-width="1"/>
+    <text x="0" y="20" font-family="'Source Serif 4', Georgia, serif" font-size="11"
+          fill="#d4a574" text-anchor="middle" font-weight="600">1970-е</text>
+    <text x="0" y="35" font-family="'Source Serif 4', Georgia, serif" font-size="9"
+          fill="#6b6b7b" text-anchor="middle">Современный</text>
+    <text x="0" y="47" font-family="'Source Serif 4', Georgia, serif" font-size="9"
+          fill="#6b6b7b" text-anchor="middle">singlet</text>
+  </g>
+
+  <!-- 2017 -->
+  <g transform="translate(670, 180)">
+    <circle cx="0" cy="0" r="4" fill="#d4a574" opacity="0.4"/>
+    <line x1="0" y1="-8" x2="0" y2="-50" stroke="#d4a574" stroke-width="0.5" opacity="0.2"/>
+    <!-- Two-piece figure -->
+    <circle cx="0" cy="-70" r="7" fill="none" stroke="#6b6b7b" stroke-width="1"/>
+    <path d="M-7,-58 L-8,-45 L8,-45 L7,-58 Z" fill="none" stroke="#6b6b7b" stroke-width="1"/>
+    <path d="M-8,-45 L-9,-35 L9,-35 L8,-45 Z" fill="none" stroke="#6b6b7b" stroke-width="0.8"/>
+    <path d="M0,-35 L-4,-25 M0,-35 L4,-25" stroke="#6b6b7b" stroke-width="1"/>
+    <text x="0" y="20" font-family="'Source Serif 4', Georgia, serif" font-size="11"
+          fill="#d4a574" text-anchor="middle" font-weight="600">2017</text>
+    <text x="0" y="35" font-family="'Source Serif 4', Georgia, serif" font-size="9"
+          fill="#6b6b7b" text-anchor="middle">Альтернатива</text>
+    <text x="0" y="47" font-family="'Source Serif 4', Georgia, serif" font-size="9"
+          fill="#6b6b7b" text-anchor="middle">2 элемента</text>
+  </g>
+
+  <!-- 2026 (highlighted) -->
+  <g transform="translate(810, 180)">
+    <circle cx="0" cy="0" r="6" fill="#d4a574" opacity="0.6"/>
+    <circle cx="0" cy="0" r="12" fill="none" stroke="#d4a574" stroke-width="1" opacity="0.2"/>
+    <line x1="0" y1="-16" x2="0" y2="-50" stroke="#d4a574" stroke-width="0.8" opacity="0.4"/>
+    <!-- New concept figure (with wider shoulders, panels) -->
+    <circle cx="0" cy="-70" r="7" fill="none" stroke="#d4a574" stroke-width="1.2"/>
+    <path d="M-10,-58 L-12,-35 L12,-35 L10,-58 Z" fill="none" stroke="#d4a574" stroke-width="1.2"/>
+    <!-- Panels -->
+    <line x1="-8" y1="-52" x2="8" y2="-52" stroke="#d4a574" stroke-width="0.5" opacity="0.5"/>
+    <line x1="-9" y1="-47" x2="9" y2="-47" stroke="#d4a574" stroke-width="0.5" opacity="0.5"/>
+    <line x1="-10" y1="-42" x2="10" y2="-42" stroke="#d4a574" stroke-width="0.5" opacity="0.5"/>
+    <path d="M0,-35 L-6,-20 M0,-35 L6,-20" stroke="#d4a574" stroke-width="1.2"/>
+    <text x="0" y="20" font-family="'Source Serif 4', Georgia, serif" font-size="11"
+          fill="#d4a574" text-anchor="middle" font-weight="700">2026?</text>
+    <text x="0" y="35" font-family="'Source Serif 4', Georgia, serif" font-size="9"
+          fill="#d4a574" text-anchor="middle">Новая эра</text>
+  </g>
+
+  <!-- Bottom label -->
+  <text x="450" y="285" font-family="'Source Serif 4', Georgia, serif" font-size="10"
+        fill="#6b6b7b" text-anchor="middle" opacity="0.4">3000 лет эволюции — от обнажённых атлетов до формы, достойной чемпионов</text>
+</svg>

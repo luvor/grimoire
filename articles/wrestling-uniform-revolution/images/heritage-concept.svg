@@ -1,0 +1,211 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <style>
+      text { font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif; }
+    </style>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="800" height="600" fill="#14141f"/>
+
+  <!-- Title -->
+  <text x="400" y="35" text-anchor="middle" fill="#d4a574" font-size="16" font-weight="600" letter-spacing="3">КОНЦЕПТ «НАСЛЕДИЕ»</text>
+  <line x1="240" y1="45" x2="560" y2="45" stroke="#d4a574" stroke-width="0.5" opacity="0.4"/>
+  <text x="400" y="62" text-anchor="middle" fill="#6b6b7b" font-size="11" letter-spacing="1">ЭТНИЧЕСКИЕ ТРАДИЦИИ В СОВРЕМЕННОМ ДИЗАЙНЕ</text>
+
+  <!-- ==================== CENTRAL MODERN DESIGN ==================== -->
+  <g transform="translate(400, 72)">
+    <!-- Head -->
+    <ellipse cx="0" cy="28" rx="20" ry="24" fill="#2a2a3a"/>
+    <!-- Neck -->
+    <rect x="-9" y="50" width="18" height="12" rx="3" fill="#2a2a3a"/>
+
+    <!-- Full body suit - long sleeve to elbow, shorts to knee -->
+    <!-- Torso + sleeves -->
+    <path d="M-40,62 L-48,68 L-50,78 L-48,82 L-42,78 L-38,72 Z" fill="#0D5C63" stroke="#C9A84C" stroke-width="0.5"/>
+    <path d="M40,62 L48,68 L50,78 L48,82 L42,78 L38,72 Z" fill="#0D5C63" stroke="#C9A84C" stroke-width="0.5"/>
+
+    <!-- Main torso -->
+    <path d="M-38,65 L-42,90 L-44,120 L-42,150 L-38,165 L-30,172 L-20,178 L-16,182 L-16,310 L-8,315 L0,312 L8,315 L16,310 L16,182 L20,178 L30,172 L38,165 L42,150 L44,120 L42,90 L38,65 L28,62 L20,60 L-20,60 L-28,62 Z" fill="#0D5C63" stroke="#C9A84C" stroke-width="0.8"/>
+
+    <!-- Long sleeves to elbow -->
+    <!-- Left sleeve -->
+    <path d="M-42,68 L-62,78 L-78,105 L-82,130 L-72,132 L-66,108 L-52,82 L-44,72 Z" fill="#0D5C63" stroke="#C9A84C" stroke-width="0.5"/>
+    <!-- Elbow cuff -->
+    <ellipse cx="-80" cy="132" rx="8" ry="4" fill="none" stroke="#C9A84C" stroke-width="1.2"/>
+    <!-- Right sleeve -->
+    <path d="M42,68 L62,78 L78,105 L82,130 L72,132 L66,108 L52,82 L44,72 Z" fill="#0D5C63" stroke="#C9A84C" stroke-width="0.5"/>
+    <!-- Elbow cuff -->
+    <ellipse cx="80" cy="132" rx="8" ry="4" fill="none" stroke="#C9A84C" stroke-width="1.2"/>
+
+    <!-- Forearms (exposed) -->
+    <path d="M-82,135 L-84,160 L-82,175 L-74,177 L-74,162 L-74,138 Z" fill="#2a2a3a"/>
+    <path d="M82,135 L84,160 L82,175 L74,177 L74,162 L74,138 Z" fill="#2a2a3a"/>
+
+    <!-- Knee cuffs -->
+    <ellipse cx="-12" cy="312" rx="10" ry="4" fill="none" stroke="#C9A84C" stroke-width="1.2"/>
+    <ellipse cx="12" cy="312" rx="10" ry="4" fill="none" stroke="#C9A84C" stroke-width="1.2"/>
+
+    <!-- Waist dividing line -->
+    <path d="M-38,165 L0,175 L38,165" fill="none" stroke="#C9A84C" stroke-width="1.5"/>
+
+    <!-- Ornamental patterns on sleeves (arabesque lines) -->
+    <!-- Left sleeve ornament -->
+    <path d="M-52,82 Q-58,88 -55,95 Q-52,102 -58,108 Q-64,114 -60,120" fill="none" stroke="#C9A84C" stroke-width="1" opacity="0.7"/>
+    <path d="M-48,84 Q-54,90 -51,97 Q-48,104 -54,110 Q-60,116 -56,122" fill="none" stroke="#C9A84C" stroke-width="0.8" opacity="0.5"/>
+    <!-- Right sleeve ornament -->
+    <path d="M52,82 Q58,88 55,95 Q52,102 58,108 Q64,114 60,120" fill="none" stroke="#C9A84C" stroke-width="1" opacity="0.7"/>
+    <path d="M48,84 Q54,90 51,97 Q48,104 54,110 Q60,116 56,122" fill="none" stroke="#C9A84C" stroke-width="0.8" opacity="0.5"/>
+
+    <!-- Chest ornamental element (stylized wrestler) -->
+    <circle cx="0" cy="100" r="15" fill="none" stroke="#C9A84C" stroke-width="0.8" opacity="0.5"/>
+    <path d="M0,90 L-5,95 L-8,100 L-5,105 L0,108 L5,105 L8,100 L5,95 Z" fill="none" stroke="#C9A84C" stroke-width="0.8" opacity="0.6"/>
+    <circle cx="0" cy="100" r="5" fill="none" stroke="#C9A84C" stroke-width="0.5" opacity="0.4"/>
+
+    <!-- Leg ornament (larger arabesque scale) -->
+    <path d="M-10,200 Q-14,220 -10,240 Q-6,260 -10,280" fill="none" stroke="#C9A84C" stroke-width="1" opacity="0.5"/>
+    <path d="M10,200 Q14,220 10,240 Q6,260 10,280" fill="none" stroke="#C9A84C" stroke-width="1" opacity="0.5"/>
+
+    <!-- Small flag on left chest -->
+    <rect x="-25" y="78" width="10" height="7" rx="1" fill="none" stroke="#C9A84C" stroke-width="0.6"/>
+    <line x1="-25" y1="80" x2="-15" y2="80" stroke="#C9A84C" stroke-width="0.3" opacity="0.5"/>
+    <line x1="-25" y1="83" x2="-15" y2="83" stroke="#C9A84C" stroke-width="0.3" opacity="0.5"/>
+
+    <!-- Country code on right thigh -->
+    <text x="12" y="220" fill="#C9A84C" font-size="9" font-weight="600" letter-spacing="1" opacity="0.6">IRN</text>
+
+    <!-- Lower legs below knee -->
+    <path d="M-8,315 L-10,350 L-12,385 L-14,410 L-4,412 L-4,388 L-4,352 L0,315 Z" fill="#2a2a3a"/>
+    <path d="M8,315 L10,350 L12,385 L14,410 L4,412 L4,388 L4,352 L0,315 Z" fill="#2a2a3a"/>
+    <ellipse cx="-10" cy="415" rx="10" ry="5" fill="#2a2a3a"/>
+    <ellipse cx="10" cy="415" rx="10" ry="5" fill="#2a2a3a"/>
+  </g>
+
+  <!-- ==================== SURROUNDING TRADITIONAL COSTUMES ==================== -->
+
+  <!-- TOP-LEFT: Mongolian zodog -->
+  <g transform="translate(100, 100)">
+    <rect x="-45" y="-15" width="90" height="100" rx="4" fill="#1a1a28" stroke="#6b6b7b" stroke-width="0.5" opacity="0.5"/>
+    <text x="0" y="-2" text-anchor="middle" fill="#d4a574" font-size="8" font-weight="600">Монголия</text>
+    <text x="0" y="8" text-anchor="middle" fill="#6b6b7b" font-size="7">зодог + шуудаг</text>
+
+    <!-- Mini wrestler with zodog vest -->
+    <ellipse cx="0" cy="22" rx="7" ry="8" fill="#3a3a4a"/>
+    <!-- Open-front vest (zodog) -->
+    <path d="M-12,30 L-15,38 L-16,52 L-14,60 L-6,62 L-2,55 L-2,34 Z" fill="#2a4a6a" stroke="#d4a574" stroke-width="0.5"/>
+    <path d="M12,30 L15,38 L16,52 L14,60 L6,62 L2,55 L2,34 Z" fill="#2a4a6a" stroke="#d4a574" stroke-width="0.5"/>
+    <!-- Shorts (shuudag) -->
+    <path d="M-12,60 L-14,72 L-6,74 L0,70 L6,74 L14,72 L12,60 Z" fill="#6a3a2a" stroke="#d4a574" stroke-width="0.5"/>
+    <!-- Arms exposed -->
+    <line x1="-15" y1="34" x2="-22" y2="52" stroke="#3a3a4a" stroke-width="3" stroke-linecap="round"/>
+    <line x1="15" y1="34" x2="22" y2="52" stroke="#3a3a4a" stroke-width="3" stroke-linecap="round"/>
+    <!-- Legs -->
+    <line x1="-6" y1="74" x2="-8" y2="82" stroke="#3a3a4a" stroke-width="3" stroke-linecap="round"/>
+    <line x1="6" y1="74" x2="8" y2="82" stroke="#3a3a4a" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- TOP-RIGHT: Turkish kispet -->
+  <g transform="translate(700, 100)">
+    <rect x="-45" y="-15" width="90" height="100" rx="4" fill="#1a1a28" stroke="#6b6b7b" stroke-width="0.5" opacity="0.5"/>
+    <text x="0" y="-2" text-anchor="middle" fill="#d4a574" font-size="8" font-weight="600">Турция</text>
+    <text x="0" y="8" text-anchor="middle" fill="#6b6b7b" font-size="7">кисбет</text>
+
+    <!-- Mini wrestler with kispet leather pants -->
+    <ellipse cx="0" cy="22" rx="7" ry="8" fill="#3a3a4a"/>
+    <!-- Bare torso -->
+    <path d="M-10,30 L-12,42 L-12,55 L10,55 L12,42 L10,30 Z" fill="#3a3a4a"/>
+    <!-- Kispet - long leather pants -->
+    <path d="M-14,55 L-16,68 L-18,80 L-12,82 L-6,70 L0,68 L6,70 L12,82 L18,80 L16,68 L14,55 Z" fill="#4a3a2a" stroke="#d4a574" stroke-width="0.5"/>
+    <!-- Oil-wrestling texture (dots) -->
+    <circle cx="-5" cy="62" r="0.5" fill="#d4a574" opacity="0.3"/>
+    <circle cx="5" cy="62" r="0.5" fill="#d4a574" opacity="0.3"/>
+    <circle cx="0" cy="66" r="0.5" fill="#d4a574" opacity="0.3"/>
+    <!-- Arms -->
+    <line x1="-12" y1="34" x2="-20" y2="50" stroke="#3a3a4a" stroke-width="3" stroke-linecap="round"/>
+    <line x1="12" y1="34" x2="20" y2="50" stroke="#3a3a4a" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- BOTTOM-LEFT: Japanese sumo mawashi -->
+  <g transform="translate(100, 370)">
+    <rect x="-45" y="-15" width="90" height="100" rx="4" fill="#1a1a28" stroke="#6b6b7b" stroke-width="0.5" opacity="0.5"/>
+    <text x="0" y="-2" text-anchor="middle" fill="#d4a574" font-size="8" font-weight="600">Япония</text>
+    <text x="0" y="8" text-anchor="middle" fill="#6b6b7b" font-size="7">маваши</text>
+
+    <!-- Mini sumo wrestler -->
+    <ellipse cx="0" cy="24" rx="8" ry="9" fill="#3a3a4a"/>
+    <!-- Wider torso (sumo build) -->
+    <path d="M-15,33 L-18,48 L-18,60 L18,60 L18,48 L15,33 Z" fill="#3a3a4a"/>
+    <!-- Mawashi belt -->
+    <rect x="-16" y="55" width="32" height="10" rx="2" fill="#8a7a4a" stroke="#d4a574" stroke-width="0.8"/>
+    <!-- Belt wrapping lines -->
+    <line x1="-14" y1="58" x2="14" y2="58" stroke="#d4a574" stroke-width="0.3"/>
+    <line x1="-14" y1="61" x2="14" y2="61" stroke="#d4a574" stroke-width="0.3"/>
+    <!-- Legs -->
+    <line x1="-8" y1="65" x2="-10" y2="80" stroke="#3a3a4a" stroke-width="4" stroke-linecap="round"/>
+    <line x1="8" y1="65" x2="10" y2="80" stroke="#3a3a4a" stroke-width="4" stroke-linecap="round"/>
+    <!-- Arms -->
+    <line x1="-18" y1="38" x2="-24" y2="55" stroke="#3a3a4a" stroke-width="3.5" stroke-linecap="round"/>
+    <line x1="18" y1="38" x2="24" y2="55" stroke="#3a3a4a" stroke-width="3.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- BOTTOM-RIGHT: Georgian chidaoba -->
+  <g transform="translate(700, 370)">
+    <rect x="-45" y="-15" width="90" height="100" rx="4" fill="#1a1a28" stroke="#6b6b7b" stroke-width="0.5" opacity="0.5"/>
+    <text x="0" y="-2" text-anchor="middle" fill="#d4a574" font-size="8" font-weight="600">Грузия</text>
+    <text x="0" y="8" text-anchor="middle" fill="#6b6b7b" font-size="7">чидаоба</text>
+
+    <!-- Mini Georgian wrestler -->
+    <ellipse cx="0" cy="22" rx="7" ry="8" fill="#3a3a4a"/>
+    <!-- Jacket-like top (chokha inspired) -->
+    <path d="M-12,30 L-14,42 L-14,60 L-8,62 L0,60 L8,62 L14,60 L14,42 L12,30 Z" fill="#4a2a3a" stroke="#d4a574" stroke-width="0.5"/>
+    <!-- Belt -->
+    <rect x="-12" y="55" width="24" height="4" rx="1" fill="#d4a574" opacity="0.5"/>
+    <!-- Pants -->
+    <path d="M-10,62 L-12,75 L-6,78 L0,74 L6,78 L12,75 L10,62 Z" fill="#3a2a2a" stroke="#d4a574" stroke-width="0.3"/>
+    <!-- Arms -->
+    <line x1="-14" y1="34" x2="-20" y2="52" stroke="#3a3a4a" stroke-width="3" stroke-linecap="round"/>
+    <line x1="14" y1="34" x2="20" y2="52" stroke="#3a3a4a" stroke-width="3" stroke-linecap="round"/>
+    <!-- Legs -->
+    <line x1="-6" y1="78" x2="-8" y2="84" stroke="#3a3a4a" stroke-width="3" stroke-linecap="round"/>
+    <line x1="6" y1="78" x2="8" y2="84" stroke="#3a3a4a" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- ==================== CONNECTING LINES ==================== -->
+
+  <!-- Mongolia -> sleeve design (traditional vest -> sleeve coverage) -->
+  <line x1="145" y1="165" x2="340" y2="175" stroke="#d4a574" stroke-width="0.8" stroke-dasharray="4,4" opacity="0.4"/>
+  <circle cx="340" cy="175" r="3" fill="#d4a574" opacity="0.4"/>
+  <!-- Arrow tip -->
+  <text x="240" y="160" text-anchor="middle" fill="#6b6b7b" font-size="7" opacity="0.5">жилет -> рукав</text>
+
+  <!-- Turkey -> leg length (kispet -> knee-length) -->
+  <line x1="655" y1="165" x2="460" y2="300" stroke="#d4a574" stroke-width="0.8" stroke-dasharray="4,4" opacity="0.4"/>
+  <circle cx="460" cy="300" r="3" fill="#d4a574" opacity="0.4"/>
+  <text x="570" y="225" text-anchor="middle" fill="#6b6b7b" font-size="7" opacity="0.5" transform="rotate(25, 570, 225)">кисбет -> штанины</text>
+
+  <!-- Japan -> belt area (mawashi -> waist construction) -->
+  <line x1="145" y1="405" x2="362" y2="242" stroke="#d4a574" stroke-width="0.8" stroke-dasharray="4,4" opacity="0.4"/>
+  <circle cx="362" cy="242" r="3" fill="#d4a574" opacity="0.4"/>
+  <text x="235" y="340" text-anchor="middle" fill="#6b6b7b" font-size="7" opacity="0.5" transform="rotate(-30, 235, 340)">маваши -> пояс</text>
+
+  <!-- Georgia -> overall silhouette (chokha -> full coverage) -->
+  <line x1="655" y1="405" x2="450" y2="180" stroke="#d4a574" stroke-width="0.8" stroke-dasharray="4,4" opacity="0.4"/>
+  <circle cx="450" cy="180" r="3" fill="#d4a574" opacity="0.4"/>
+  <text x="570" y="310" text-anchor="middle" fill="#6b6b7b" font-size="7" opacity="0.5" transform="rotate(-30, 570, 310)">чоха -> силуэт</text>
+
+  <!-- Bottom specs -->
+  <rect x="0" y="560" width="800" height="40" fill="#1a1a28"/>
+  <text x="130" y="584" text-anchor="middle" fill="#6b6b7b" font-size="9">ВЕС: ~300 г</text>
+  <text x="320" y="584" text-anchor="middle" fill="#6b6b7b" font-size="9">РУКАВ: до локтя</text>
+  <text x="490" y="584" text-anchor="middle" fill="#6b6b7b" font-size="9">ШТАНИНА: до колена</text>
+  <text x="680" y="584" text-anchor="middle" fill="#6b6b7b" font-size="9">ОРНАМЕНТ: до 12 цветов</text>
+  <line x1="218" y1="570" x2="218" y2="590" stroke="#6b6b7b" stroke-width="0.3" opacity="0.3"/>
+  <line x1="405" y1="570" x2="405" y2="590" stroke="#6b6b7b" stroke-width="0.3" opacity="0.3"/>
+  <line x1="580" y1="570" x2="580" y2="590" stroke="#6b6b7b" stroke-width="0.3" opacity="0.3"/>
+</svg>
