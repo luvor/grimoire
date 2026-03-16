@@ -1,43 +1,52 @@
 {
   "photos": [
     {
-      "id": "gladiator-photo",
-      "prompt": "Professional sports photography of a muscular male wrestler wearing an innovative wrestling singlet with bronze armored panels on chest and back, wide 12cm shoulder straps, segmented plate design inspired by Roman gladiator armor. The singlet extends to mid-thigh. Dark matte black base with bronze metallic panels. The athlete is photographed from behind at a three-quarter angle, face turned away, standing in a wrestling stance on a competition mat. Dramatic arena lighting from above, shallow depth of field. Editorial sports magazine quality, 85mm lens, high contrast.",
+      "id": "predator-photo",
+      "prompt": "Professional sports photography of a muscular male wrestler standing in an aggressive wrestling stance on a competition mat. He wears an innovative full-body wrestling singlet covered in biomimetic predator-skin textures: shark denticle texture on the shoulders, snake scale pattern across the torso, crocodile hide texture on the thighs. A raised ridge runs along the spine made of molded foam. The entire suit is anthracite black with subtle matte iridescent shifts. The wrestler faces the camera at a three-quarter angle, intense expression, dramatic arena overhead spotlights casting hard shadows. Editorial sports magazine quality, 85mm lens, high contrast, dark moody atmosphere.",
       "aspect": "3:4",
-      "censor": {"auto_head": true},
-      "caption": "Концепт «Гладиатор» — рельефные бронзовые панели на тёмной основе создают силуэт воина, а не участника школьных соревнований.",
+      "caption": "Концепт «Хищник» — биомиметические текстуры хищников на поверхности формы. Борец — не человек в трико, а существо.",
       "css_class": "figure-wide"
     },
     {
-      "id": "strike-photo",
-      "prompt": "Professional sports photography of an athletic male wrestler wearing a futuristic minimal wrestling singlet with bright neon accent lines running diagonally from left shoulder to right hip. Dark black base with electric blue contour lines that follow muscle groups. No armor panels, sleek and aerodynamic design. The wrestler is photographed from the side profile, face in dramatic shadow, in a dynamic low wrestling stance. Dark arena background with rim lighting. Sports editorial quality, cinematic lighting, 70mm lens.",
+      "id": "tactician-photo",
+      "prompt": "Professional sports photography of a powerful male wrestler standing at attention on a wrestling mat, wearing a tactical military-inspired wrestling singlet. The suit has visual zones resembling ballistic armor plates on chest and back, flat decorative webbing strips across the torso mimicking a tactical vest, a large bold ID number '07' printed on the back in military stencil font. Color palette: olive drab, tan, and graphite in geometric blocks. The wrestler faces the camera frontally, arms at sides, chin slightly raised, commanding presence. Dramatic side lighting, dark arena background. Editorial sports photography, 85mm lens, cinematic color grading.",
       "aspect": "3:4",
-      "censor": {"auto_head": true},
-      "caption": "Концепт «Страйк» — неоновые контурные линии на тёмной основе. Борец читается на любом расстоянии, как болид Формулы-1.",
+      "caption": "Концепт «Тактик» — военная эстетика превращает борца в оперативника. ID-номер вместо фамилии, бронепластины вместо полосок.",
       "css_class": "figure-wide"
     },
     {
-      "id": "heritage-photo",
-      "prompt": "Professional sports photography of a strong male wrestler wearing a full-body wrestling uniform: fitted long-sleeve top to elbows and shorts-leggings to knees, all one piece. The uniform features intricate Persian arabesque patterns in turquoise and gold on a dark navy base, with a sun symbol (shamse) on the chest. Inspired by Iranian wrestling traditions. Wrestler photographed in profile view, face turned away, standing proudly with arms at sides. Warm golden arena lighting, competition mat visible. Editorial sports photography, 85mm portrait lens.",
+      "id": "phantom-photo",
+      "prompt": "Professional sports photography of an athletic male wrestler standing in a wrestling ready position on a dark mat. He wears a completely black wrestling singlet with alternating matte and ultra-matte black zones. The shoulders, forearms, and quadriceps have subtle graphite metallic accents that catch the light, while the waist and neck zones absorb all light, making the silhouette appear to fragment and dissolve into shadow. Thin retroreflective threads trace muscle contour lines that flash under the arena lights. The wrestler faces the camera at three-quarter angle, mysterious presence, the body seems to break apart into floating fragments. Dramatic spotlight from above, very dark background, high contrast. Editorial sports photography, 85mm lens.",
       "aspect": "3:4",
-      "censor": {"auto_head": true},
-      "caption": "Концепт «Наследие» — персидские арабески превращают форму в культурный манифест. У каждой сборной — свой уникальный визуальный код.",
+      "caption": "Концепт «Фантом» — чередование матового и ультра-матового чёрного разбивает силуэт. Борец — тень, которую невозможно считать.",
       "css_class": "figure-wide"
     },
     {
-      "id": "elite-photo",
-      "prompt": "Professional sports photography of a muscular male wrestler wearing a premium modern wrestling singlet. Wide 10cm shoulder straps with gradient fade into the body. Matte dark charcoal base with contrasting zones — matte finish on major muscle groups, subtle sheen between them creating a sculpted 3D effect. Large athlete surname typography on the back, country flag patch on chest. Nike/Adidas level premium sportswear design. Wrestler looking down at the mat, head bowed, face not visible, powerful stance. Studio-quality lighting with dramatic shadows. Sports advertising quality, 85mm lens.",
+      "id": "nexus-photo",
+      "prompt": "Professional sports photography of a muscular male wrestler wearing a full-coverage futuristic cyberpunk wrestling bodysuit from high standing collar to ankles. The suit is matte graphite with glowing electric blue geometric circuit board patterns and a neural network design covering the entire body. Reflective nodes glow at joint points: shoulders, elbows, knees. Thermochromic zones on the chest show a blue-to-red color transition. Interface strips on the forearms resemble digital displays. The wrestler stands in a powerful stance facing the camera, lit by cool blue and warm red rim lights. Dark arena background with subtle neon glow. Evangelion plug suit aesthetic, cyberpunk, sci-fi. Editorial sports photography, 85mm lens, cinematic lighting.",
       "aspect": "3:4",
-      "censor": {"auto_head": true},
-      "caption": "Концепт «Элита» — премиальный подход: зональная компрессия создаёт рельеф без единой накладной детали.",
+      "caption": "Концепт «Нексус» — пилот Евангелиона на борцовском ковре. Термохромные зоны меняют цвет от нагрева тела во время схватки.",
+      "css_class": "figure-wide"
+    },
+    {
+      "id": "berserker-photo",
+      "prompt": "Professional sports photography of an intense male wrestler in an aggressive stance on a wrestling mat. He wears a deliberately asymmetric wrestling singlet: one shoulder has a high wide strap covering the deltoid, the other shoulder is completely bare. Jagged diagonal torn strips across the torso create a ripped armor effect. Bold red and black contrast coloring. Aggressive angular typography with number and country code printed at sharp angles. One arm has a compression sleeve to the elbow, the other arm is bare. The wrestler snarls at the camera, fists clenched, raw aggression. Dramatic red-tinted rim lighting from one side, cool blue from the other. Dark arena. Editorial sports photography, 85mm lens, high energy.",
+      "aspect": "3:4",
+      "caption": "Концепт «Берсерк» — намеренная асимметрия и контролируемый хаос. Не спортсмен — берсерк. Непредсказуемость как визуальное оружие.",
+      "css_class": "figure-wide"
+    },
+    {
+      "id": "monolith-photo",
+      "prompt": "Professional sports photography of a massive heavyweight male wrestler standing motionless facing the camera on a wrestling mat. He wears a wrestling singlet designed to maximize visual mass: extremely wide 15cm shoulder straps creating a dramatic Y-silhouette on the back, horizontal bands across the chest that visually widen the torso. All black base with a single bold red stripe running diagonally. Minimal graphics, maximum volume — the uniform is architecture, not decoration. The wrestler stands with feet wide apart, arms slightly away from body, immovable stance like a wall. Dramatic top-down lighting emphasizing the massive silhouette. Dark background. Editorial sports photography, 85mm lens, monumental feeling.",
+      "aspect": "3:4",
+      "caption": "Концепт «Монолит» — весь дизайн решает одну задачу: борец выглядит на 10 кг тяжелее. Форма как архитектура.",
       "css_class": "figure-wide"
     },
     {
       "id": "before-after",
-      "prompt": "Professional sports photography, split comparison image. LEFT SIDE: a wrestler wearing a plain, generic, unflattering red wrestling singlet (traditional basic design, thin straps, looks like underwear), standing flat-footed under flat fluorescent gym lighting, looking unimpressive. RIGHT SIDE: the same body type wrestler wearing a modern redesigned wrestling singlet with wide shoulder straps, dark base with bold graphic elements, armored look, standing in a powerful stance under dramatic arena spotlights, looking like a warrior. Both figures photographed from behind, faces not visible. Clear visual contrast between old boring design and new powerful design. Editorial comparison photography.",
+      "prompt": "Professional sports photography, split comparison image showing two wrestlers side by side. LEFT SIDE: a wrestler wearing a plain, generic, unflattering red wrestling singlet, traditional basic design with thin straps, looks like underwear, standing flat-footed under flat fluorescent gym lighting, looking unimpressive and awkward. RIGHT SIDE: the same body type wrestler wearing a futuristic dark tactical wrestling singlet with wide shoulder straps, textured surface zones, geometric armor-like panels, glowing accent lines, standing in a powerful dominant stance under dramatic arena spotlights, looking like a weapon. Both wrestlers face the camera. Clear dramatic contrast between old boring design and new powerful revolutionary design. Editorial comparison photography, 85mm lens.",
       "aspect": "16:9",
-      "censor": {"auto_head": true},
-      "caption": "Слева — стандартное трико, превращающее атлета в школьника. Справа — концепт, достойный чемпиона мира.",
+      "caption": "Слева — стандартное трико, превращающее атлета в школьника. Справа — форма, превращающая его в оружие.",
       "css_class": "figure-full"
     }
   ]
