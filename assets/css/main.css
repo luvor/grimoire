@@ -162,7 +162,7 @@ body::after {
   inset: 0;
   background: var(--vignette);
   pointer-events: none;
-  z-index: var(--z-nav);
+  z-index: calc(var(--z-nav) - 1);
 }
 
 ::selection {
@@ -203,22 +203,34 @@ img {
 
 .site-nav.scrolled {
   mix-blend-mode: normal;
-  background: rgba(10, 10, 15, 0.85);
-  backdrop-filter: blur(20px) saturate(1.4);
-  -webkit-backdrop-filter: blur(20px) saturate(1.4);
+  background: rgba(10, 10, 15, 0.95);
   border-bottom: 1px solid var(--color-border);
   padding: var(--space-md) var(--space-xl);
 }
 
+@supports (backdrop-filter: blur(1px)) {
+  .site-nav.scrolled {
+    background: rgba(10, 10, 15, 0.85);
+    backdrop-filter: blur(20px) saturate(1.4);
+    -webkit-backdrop-filter: blur(20px) saturate(1.4);
+  }
+}
+
 [data-theme="light"] .site-nav.scrolled {
-  background: rgba(250, 248, 245, 0.85);
+  background: rgba(250, 248, 245, 0.95);
+}
+
+@supports (backdrop-filter: blur(1px)) {
+  [data-theme="light"] .site-nav.scrolled {
+    background: rgba(250, 248, 245, 0.85);
+  }
 }
 
 .nav-logo {
   font-family: var(--font-display);
   font-size: var(--text-xl);
   font-weight: 500;
-  color: #e8e6e3;
+  color: var(--color-text);
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }

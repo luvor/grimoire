@@ -451,10 +451,9 @@
 /* Wide image */
 .figure-wide {
   max-width: var(--wide-width);
-  margin-left: auto;
-  margin-right: auto;
   width: calc(100% + var(--space-4xl));
   margin-left: calc(var(--space-2xl) * -1);
+  margin-right: calc(var(--space-2xl) * -1);
 }
 
 @media (max-width: 767px) {

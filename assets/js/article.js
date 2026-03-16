@@ -20,7 +20,10 @@
           const articleTop = rect.top + window.scrollY;
           const articleHeight = rect.height;
           const scrolled = window.scrollY - articleTop;
-          const progress = Math.max(0, Math.min(100, (scrolled / (articleHeight - window.innerHeight)) * 100));
+          const denominator = articleHeight - window.innerHeight;
+          const progress = denominator <= 0
+            ? 100
+            : Math.max(0, Math.min(100, (scrolled / denominator) * 100));
           progressBar.style.width = `${progress}%`;
           ticking = false;
         });
@@ -36,19 +39,24 @@
     const tocSidebar = document.querySelector('.toc-sidebar');
     if (!article || !tocContainer) return;
 
-    const headings = article.querySelectorAll('h2, h3');
+    const headings = article.querySelectorAll('h2:not(.footnotes h2), h3:not(.footnotes h3)');
     if (headings.length < 3) {
       if (tocSidebar) tocSidebar.style.display = 'none';
       return;
     }
 
-    headings.forEach((heading, i) => {
-      // Generate ID if not present
+    headings.forEach((heading) => {
       if (!heading.id) {
-        heading.id = 'section-' + heading.textContent
+        const base = 'section-' + heading.textContent
           .toLowerCase()
-          .replace(/[^\wа-яё]+/gi, '-')
+          .replace(/[^\p{L}\p{N}]+/gu, '-')
           .replace(/^-+|-+$/g, '');
+        let id = base;
+        let counter = 1;
+        while (document.getElementById(id)) {
+          id = `${base}-${counter++}`;
+        }
+        heading.id = id;
       }
 
       const li = document.createElement('li');
@@ -166,7 +174,7 @@
     });
   }
 
-  // ── Image Lightbox (simple) ──────────────────────── //
+  // ── Image Lightbox ─────────────────────────────── //
   function initLightbox() {
     const images = document.querySelectorAll('.article-body figure img');
     images.forEach(img => {
@@ -180,6 +188,10 @@
           cursor: zoom-out; animation: fadeIn 0.3s ease;
           backdrop-filter: blur(20px);
         `;
+        overlay.setAttribute('role', 'dialog');
+        overlay.setAttribute('aria-modal', 'true');
+        overlay.setAttribute('aria-label', 'Увеличенное изображение');
+        overlay.setAttribute('tabindex', '-1');
 
         const clone = img.cloneNode();
         clone.style.cssText = `
@@ -190,11 +202,13 @@
 
         overlay.appendChild(clone);
         document.body.appendChild(overlay);
+        overlay.focus();
 
         const close = () => {
           overlay.style.opacity = '0';
           overlay.style.transition = 'opacity 0.2s ease';
           setTimeout(() => overlay.remove(), 200);
+          img.focus();
         };
 
         overlay.addEventListener('click', close);
