@@ -51,15 +51,6 @@
   );
 }
 
-[data-theme="light"] .article-hero-image::after {
-  background: linear-gradient(
-    to top,
-    var(--color-bg) 0%,
-    rgba(250, 248, 245, 0.7) 40%,
-    rgba(250, 248, 245, 0.3) 100%
-  );
-}
-
 .article-hero-content {
   position: relative;
   z-index: var(--z-base);

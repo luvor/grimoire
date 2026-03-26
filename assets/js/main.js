@@ -1,37 +1,10 @@
 /* ═══════════════════════════════════════════════════════
    GRIMOIRE — Main JavaScript
-   Theme toggle, scroll animations, card interactions
+   Scroll animations, card interactions
    ═══════════════════════════════════════════════════════ */
 
 (function () {
   'use strict';
-
-  // ── Theme Management ─────────────────────────────── //
-  const THEME_KEY = 'grimoire-theme';
-
-  function getPreferredTheme() {
-    const stored = localStorage.getItem(THEME_KEY);
-    if (stored) return stored;
-    return window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
-  }
-
-  function setTheme(theme) {
-    document.documentElement.setAttribute('data-theme', theme);
-    localStorage.setItem(THEME_KEY, theme);
-    const toggle = document.querySelector('.theme-toggle');
-    if (toggle) {
-      toggle.setAttribute('aria-pressed', theme === 'light' ? 'true' : 'false');
-    }
-    // Update theme-color meta for browser chrome / PWA
-    document.querySelectorAll('meta[name="theme-color"]').forEach(m => m.remove());
-    const meta = document.createElement('meta');
-    meta.name = 'theme-color';
-    meta.content = theme === 'light' ? '#faf8f5' : '#0a0a0f';
-    document.head.appendChild(meta);
-  }
-
-  // Apply theme immediately to prevent flash
-  setTheme(getPreferredTheme());
 
   // ── Nav Scroll Effect ────────────────────────────── //
   function handleNavScroll() {
@@ -112,15 +85,6 @@
 
   // ── Initialize ───────────────────────────────────── //
   document.addEventListener('DOMContentLoaded', () => {
-    // Theme toggle
-    const toggle = document.querySelector('.theme-toggle');
-    if (toggle) {
-      toggle.addEventListener('click', () => {
-        const current = document.documentElement.getAttribute('data-theme') || 'dark';
-        setTheme(current === 'dark' ? 'light' : 'dark');
-      });
-    }
-
     handleNavScroll();
     initScrollAnimations();
     initCardEffects();
@@ -130,12 +94,5 @@
     requestAnimationFrame(() => {
       requestAnimationFrame(initPageReveal);
     });
-  });
-
-  // Listen for system theme changes
-  window.matchMedia('(prefers-color-scheme: light)').addEventListener('change', (e) => {
-    if (!localStorage.getItem(THEME_KEY)) {
-      setTheme(e.matches ? 'light' : 'dark');
-    }
   });
 })();
