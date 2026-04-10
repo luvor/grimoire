@@ -1,0 +1,11 @@
+.env*
+**/.env*
+*.pem
+*.key
+*.p12
+*.pfx
+node_modules
+.venv
+dist
+build
+coverage
