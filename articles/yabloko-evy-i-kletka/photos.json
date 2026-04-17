@@ -1,0 +1,32 @@
+{
+  "photos": [
+    {
+      "id": "sumerian-scribe",
+      "prompt": "Cinematic photograph of an ancient Sumerian priest-scribe bent deeply over a clay tablet in a dim temple chamber, 2500 BCE. He is photographed from directly above and behind, head bowed so deeply that ONLY the back of the head and shoulders are visible — FACE COMPLETELY INVISIBLE, turned straight down into the tablet. He wears a rough woolen kaunakes robe with overlapping shaggy tufts covering most of the head and all shoulders. His hands hold a reed stylus pressing cuneiform wedges into wet clay. On the table: small oil lamp casting warm amber light, a bronze serpent-shaped amulet, dried herbs, a second unused tablet, a bronze cup. Walls of sun-dried brick with faint carved bas-relief of protective demon figures barely visible in shadow. Atmospheric dust particles in the lamp light. Deep shadows, warm amber palette, dark chocolate shadows. 35mm film grain, cinematic composition, shallow depth of field. Shot on Arri Alexa, 50mm lens.",
+      "aspect": "3:4",
+      "caption": "Шумерский жрец записывает заклинание против демона болезни. В его мире это не суеверие, а протопсихология — единственный доступный язык для опыта, у которого ещё нет имени.",
+      "css_class": "figure-wide"
+    },
+    {
+      "id": "ochre-hands",
+      "prompt": "Hyperrealistic photograph of a prehistoric human hand pressed against a rough cave wall, about to blow red ochre pigment through a hollow bone tube. The hand is weathered, muscular, with dirt in the nail beds. Person is crouched very low, body mostly out of frame, HEAD COMPLETELY OUT OF FRAME above the top edge — no face, no head visible anywhere, only arm and hand in the composition. Around the hand on the cave wall: several existing hand stencils in deep red-ochre, one in black charcoal, overlapping in layers suggesting generations of ritual. Stone is uneven, marked by natural calcium drippings. Single oil lamp flame on a ledge provides the only light, casting dramatic chiaroscuro. Earth pigments in small stone bowls on the ground: red ochre, yellow ochre, manganese black. 100,000 years of cognition in one gesture. Shot on medium format, 80mm lens, f/2.8. Deep shadows, warm amber and deep red palette.",
+      "aspect": "3:4",
+      "caption": "Отпечаток руки, сделанный выдуванием охры через полую кость. Датировка — до 100 000 лет назад. Это не «дикарь»: это символическое мышление в момент своего рождения.",
+      "css_class": "figure-wide"
+    },
+    {
+      "id": "exile-figure",
+      "prompt": "Cinematic wide-shot landscape photograph of a single human figure walking away from the camera across a vast barren desert of dark volcanic scree and wind-polished stones at twilight. Figure is small in the frame, centered at lower middle, rendered only in silhouette from behind, wearing a rough draped linen shawl that COMPLETELY COVERS THE HEAD as a hood — absolutely no face visible from any angle, only the back of the hooded silhouette. Long shadows rake across the stones. In the far distance: a suggestion of a lush green oasis dissolving into mist, impossible to reach. Sky gradates from deep indigo above to burnt orange at horizon. Sparse acacia tree silhouette left of frame. The mood: loss, departure, asymmetry. No text, no artifacts. Shot on Hasselblad, 40mm lens, golden hour, soft natural light. Earth tones, warm amber, deep indigo.",
+      "aspect": "16:9",
+      "caption": "Уход в мир ограничений. Сюжет об изгнании из рая — не про конкретное яблоко. Он про структуру перехода от простого к сложному, которая повторяется на всех уровнях жизни.",
+      "css_class": "figure-full"
+    },
+    {
+      "id": "pyramid-dawn",
+      "prompt": "Cinematic photograph of the Great Pyramid of Giza at pre-dawn blue hour, shot from low angle on the desert floor. Massive limestone blocks fill the majority of the frame in sharp geometric clarity, catching first cool light. A single ancient Egyptian surveyor is visible in profile at the right side of frame — but he is photographed STRICTLY FROM BEHIND, with his back fully turned to camera, head bowed looking straight down at his work, FACE COMPLETELY HIDDEN from camera view. He kneels measuring alignment with a long horizontal plumb-line cord. He wears a simple white linen kilt and a linen head-cloth that covers the sides of his head like a hood. Around him on the ground: wooden measuring rod with hieroglyphs, a bronze plumb-bob on a cord, a clay oil lamp, a papyrus sketch with geometric lines. The pyramid's edge aligns almost exactly north-south. Sky: deep cobalt blue with pale gold horizon. No birds, no modern artifacts. Shot on Hasselblad 80mm, cool blue-amber color grade, soft ambient light, no hard shadows yet. Hyperrealistic architectural photography.",
+      "aspect": "16:9",
+      "caption": "Пирамида Хуфу выровнена по сторонам света с точностью 0,067° — лучше, чем одна угловая минута на пятнадцатую. Это достигнуто без стали, колеса и компаса. Только тень, шнур и понимание равноденствия.",
+      "css_class": "figure-full"
+    }
+  ]
+}
