@@ -1,0 +1,44 @@
+{
+  "photos": [
+    {
+      "id": "img-01",
+      "prompt": "editorial macro photograph of a scratched anodized aluminum surface catching warm window light, shallow depth of field, 16:9",
+      "aspect": "3:4",
+      "censor": {
+        "auto_head": true
+      },
+      "caption": "editorial macro photograph of a scratched anodized aluminum surface catching warm window light, shallow depth of field, 16:9",
+      "css_class": "figure-wide"
+    },
+    {
+      "id": "img-02",
+      "prompt": "close-up photograph of a raku tea bowl with irregular glaze, museum-style soft lighting, neutral background, square aspect",
+      "aspect": "3:4",
+      "censor": {
+        "auto_head": true
+      },
+      "caption": "close-up photograph of a raku tea bowl with irregular glaze, museum-style soft lighting, neutral background, square aspect",
+      "css_class": "figure-wide"
+    },
+    {
+      "id": "img-03",
+      "prompt": "macro photograph of a kintsugi-repaired ceramic bowl with visible gold seams, dramatic side lighting on dark linen background, 1:1",
+      "aspect": "3:4",
+      "censor": {
+        "auto_head": true
+      },
+      "caption": "macro photograph of a kintsugi-repaired ceramic bowl with visible gold seams, dramatic side lighting on dark linen background, 1:1",
+      "css_class": "figure-wide"
+    },
+    {
+      "id": "img-04",
+      "prompt": "editorial flat-lay photograph of muji-style minimalist household objects on raw pine shelf, daylight, neutral palette, 16:9",
+      "aspect": "3:4",
+      "censor": {
+        "auto_head": true
+      },
+      "caption": "editorial flat-lay photograph of muji-style minimalist household objects on raw pine shelf, daylight, neutral palette, 16:9",
+      "css_class": "figure-wide"
+    }
+  ]
+}
