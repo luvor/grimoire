@@ -1,159 +1,108 @@
 #!/usr/bin/env python3
-"""Generate an image using Gemini 2.5 Flash Image Generation API.
+"""Generate an image via render-farm (Google Flow, Nano Banana) and save as WebP.
+
+Заменяет прежний Gemini-API путь: генерация идёт через ~/Projects/render-farm
+(bun + playwright, залогиненный Chrome-профиль, квота подписки Flow).
+CLI совместим со старой версией — auto-articles/tools/image_gen.py зовёт как раньше.
 
 Usage:
     python3 scripts/generate-image.py \
-        --prompt "Professional sports photo of..." \
-        --output articles/wrestling-uniform-revolution/images/gladiator-photo.webp \
-        [--model gemini-2.5-flash-preview-image-generation] \
-        [--aspect 3:4]
+        --prompt "Editorial illustration of..." \
+        --output assets/covers/some-slug.webp \
+        [--model nano-banana-pro] \
+        [--aspect 16:9]
 """
 
 import argparse
-import base64
-import json
+import glob
 import os
+import re
 import subprocess
 import sys
-import tempfile
-import urllib.request
-import urllib.error
 
-
-API_BASE = "https://generativelanguage.googleapis.com/v1beta/models"
-DEFAULT_MODEL = "gemini-2.5-flash-image"
+RENDER_FARM = os.path.expanduser("~/Projects/render-farm")
+DEFAULT_MODEL = "nano-banana-pro"
 MAX_SIDE = 1200
 WEBP_QUALITY = 80
 
+# Flow генерит нативно 16:9 | 4:3 | 1:1 | 3:4 | 9:16; render-farm слоты: 1:1 | 3:4 | 16:9
+ASPECT_TO_SLOT = {
+    "16:9": "16:9",
+    "3:2": "16:9",  # старый Gemini-аспект обложек precogs
+    "4:3": "16:9",
+    "1:1": "1:1",
+    "3:4": "3:4",
+    "2:3": "3:4",
+    "9:16": "3:4",
+}
 
-def load_api_key():
-    """Load GEMINI_API_KEY from environment or .env file."""
-    key = os.environ.get("GEMINI_API_KEY")
-    if key:
-        return key
 
-    # Try .env in project root
-    env_paths = [
-        os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), ".env"),
-        os.path.join(os.getcwd(), ".env"),
+def run_render_farm(prompt, model, slot):
+    """bun gen → путь к скачанному raw-файлу."""
+    if not os.path.isdir(RENDER_FARM):
+        print(f"Error: render-farm не найден: {RENDER_FARM}", file=sys.stderr)
+        sys.exit(1)
+
+    cmd = [
+        "bun", "gen", prompt,
+        "--type", "image",
+        "--slot", slot,
+        "--model", model,
+        "--variants", "1",
     ]
-    for env_path in env_paths:
-        if os.path.exists(env_path):
-            with open(env_path) as f:
-                for line in f:
-                    line = line.strip()
-                    if line.startswith("GEMINI_API_KEY=") and not line.startswith("#"):
-                        val = line.split("=", 1)[1].strip().strip("'\"")
-                        if val and val != "your_api_key_here":
-                            return val
-
-    print("Error: GEMINI_API_KEY not found.", file=sys.stderr)
-    print("Set it via environment variable or in .env file.", file=sys.stderr)
-    print("Get a free key at: https://aistudio.google.com/apikey", file=sys.stderr)
-    sys.exit(1)
-
-
-def generate_image(prompt, model, api_key, aspect=None):
-    """Call Gemini API and return raw PNG bytes."""
-    url = f"{API_BASE}/{model}:generateContent?key={api_key}"
-
-    # Build the prompt with aspect ratio hint
-    full_prompt = prompt
-    if aspect:
-        full_prompt += f"\n\nAspect ratio: {aspect}"
-
-    payload = {
-        "contents": [
-            {
-                "parts": [{"text": full_prompt}]
-            }
-        ],
-        "generationConfig": {
-            "responseModalities": ["TEXT", "IMAGE"]
-        }
-    }
-
-    data = json.dumps(payload).encode("utf-8")
-    req = urllib.request.Request(
-        url,
-        data=data,
-        headers={"Content-Type": "application/json"},
-        method="POST"
-    )
-
-    try:
-        with urllib.request.urlopen(req, timeout=120) as resp:
-            result = json.loads(resp.read().decode("utf-8"))
-    except urllib.error.HTTPError as e:
-        body = e.read().decode("utf-8", errors="replace")
-        if e.code == 429:
-            print("Error: Rate limit exceeded. Wait a moment and retry.", file=sys.stderr)
-        elif e.code == 400 and "SAFETY" in body.upper():
-            print("Error: Prompt blocked by safety filters. Rephrase the prompt.", file=sys.stderr)
-        else:
-            print(f"Error: HTTP {e.code}: {body[:500]}", file=sys.stderr)
+    proc = subprocess.run(cmd, cwd=RENDER_FARM, capture_output=True, text=True)
+    sys.stderr.write(proc.stderr)
+    print(proc.stdout)
+    if proc.returncode != 0:
+        print(f"Error: bun gen exited {proc.returncode}", file=sys.stderr)
         sys.exit(1)
 
-    # Extract image from response
-    candidates = result.get("candidates", [])
-    if not candidates:
-        print("Error: No candidates in response.", file=sys.stderr)
-        print(json.dumps(result, indent=2)[:500], file=sys.stderr)
+    m = re.search(r"Батч: (.+)", proc.stdout)
+    if not m:
+        print("Error: не нашёл строку 'Батч:' в выводе bun gen", file=sys.stderr)
         sys.exit(1)
-
-    parts = candidates[0].get("content", {}).get("parts", [])
-    for part in parts:
-        if "inlineData" in part:
-            mime = part["inlineData"].get("mimeType", "")
-            if mime.startswith("image/"):
-                return base64.b64decode(part["inlineData"]["data"])
-
-    print("Error: No image found in response.", file=sys.stderr)
-    for part in parts:
-        if "text" in part:
-            print(f"Model said: {part['text'][:300]}", file=sys.stderr)
-    sys.exit(1)
+    raw_dir = os.path.join(m.group(1).strip(), "raw")
+    files = sorted(glob.glob(os.path.join(raw_dir, "*")))
+    if not files:
+        print(f"Error: пустой {raw_dir} — генерация не скачалась", file=sys.stderr)
+        sys.exit(1)
+    return files[0]
 
 
-def convert_to_webp(png_bytes, output_path):
-    """Convert PNG bytes to WebP using ImageMagick, resize to max 1200px."""
+def convert_to_webp(src_path, output_path):
+    """ImageMagick: resize до 1200px по большей стороне → WebP q80."""
     os.makedirs(os.path.dirname(os.path.abspath(output_path)), exist_ok=True)
-
-    with tempfile.NamedTemporaryFile(suffix=".png", delete=False) as tmp:
-        tmp.write(png_bytes)
-        tmp_path = tmp.name
-
-    try:
-        cmd = [
-            "magick", tmp_path,
-            "-resize", f"{MAX_SIDE}x{MAX_SIDE}>",
-            "-quality", str(WEBP_QUALITY),
-            output_path
-        ]
-        subprocess.run(cmd, check=True, capture_output=True)
-    finally:
-        os.unlink(tmp_path)
-
-    size_kb = os.path.getsize(output_path) / 1024
-    return size_kb
+    cmd = [
+        "magick", src_path,
+        "-resize", f"{MAX_SIDE}x{MAX_SIDE}>",
+        "-quality", str(WEBP_QUALITY),
+        output_path,
+    ]
+    subprocess.run(cmd, check=True, capture_output=True)
+    return os.path.getsize(output_path) / 1024
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Generate image via Gemini API")
+    parser = argparse.ArgumentParser(description="Generate image via render-farm (Flow)")
     parser.add_argument("--prompt", required=True, help="Image generation prompt")
     parser.add_argument("--output", required=True, help="Output file path (.webp)")
-    parser.add_argument("--model", default=DEFAULT_MODEL, help="Gemini model name")
-    parser.add_argument("--aspect", default=None, help="Aspect ratio hint (e.g. 3:4)")
+    parser.add_argument("--model", default=DEFAULT_MODEL,
+                        help="Flow model: nano-banana-pro | nano-banana-2 | nano-banana-2-lite")
+    parser.add_argument("--aspect", default="16:9", help="Aspect ratio (16:9, 3:4, 1:1...)")
     args = parser.parse_args()
 
-    api_key = load_api_key()
+    slot = ASPECT_TO_SLOT.get(args.aspect)
+    if slot is None:
+        print(f"Error: аспект {args.aspect} не маппится на слот Flow "
+              f"({', '.join(sorted(ASPECT_TO_SLOT))})", file=sys.stderr)
+        sys.exit(1)
 
     print(f"Generating: {os.path.basename(args.output)}")
     print(f"  Prompt: {args.prompt[:80]}...")
-    png_bytes = generate_image(args.prompt, args.model, api_key, args.aspect)
-    print(f"  Received: {len(png_bytes) / 1024:.0f} KB PNG")
+    raw_path = run_render_farm(args.prompt, args.model, slot)
+    print(f"  Raw: {raw_path}")
 
-    size_kb = convert_to_webp(png_bytes, args.output)
+    size_kb = convert_to_webp(raw_path, args.output)
     print(f"  Saved: {args.output} ({size_kb:.0f} KB)")
 
 
